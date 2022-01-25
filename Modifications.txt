@@ -1,0 +1,16 @@
+Modifications à faire :
+
+- PROGRAMME : - Ajouter les types "Diplôme d'ingénieur" et "Diplôme d'ingénieur par apprentissage"
+
+- SEMESTRE : - Retirer les "modules", les matières ne sont pas sous-divisées en modules à l'ENSEM
+
+- ETUDIANT : - Ajouter la voie d'admission (concours INP, prépa des INP, fac, DUT)
+	     + informations complémentaires (lieu du lycée/fac etc, rang d'admission...)
+	     - Ajouter les contrats d'études 
+
+- ABSENCES : - Supprimer le système de demi-journées
+	     - Ajouter les absences par cours uniquement
+
+- AUTRES : - Ajouter informations sur les enseignants
+	   - Doubles diplômes et mobilité
+	   - Améliorer l'esthétique du site
