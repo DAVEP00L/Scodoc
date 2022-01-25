@@ -1,0 +1,38 @@
+<etudiant>
+	<nip>{nip}</nip>
+	<etape>{etape}</etape>
+	<versionetape>{etape}/117</versionetape>
+	<versiondiplome>{diplome}/117</versiondiplome>
+	<gender>{gender}</gender>
+	<nom>{nom}</nom>
+	<nomusuel></nomusuel>
+	<prenom>{prenom}</prenom>
+	<naissance>23/08/2001</naissance>
+	<inscription>{annee}</inscription>
+	<address>11, rue Simon Crubellier</address>
+	<postalcode>75017</postalcode>
+	<city>PARIS</city>
+	<country>FRANCE</country>
+	<phone>0606060606</phone>
+	<mail>{prenom}.martin@edu.sco.zzz</mail>
+	<bac>S Scientifique</bac>
+	<anneebac>2019</anneebac>
+	<lycee>07981234T</lycee>
+	<mention>AB</mention>
+	<bourse>N</bourse>
+	<paiementinscription>true</paiementinscription>
+	<datefinalisationinscription></datefinalisationinscription>
+	<ville_naissance>{ville_naissance}</ville_naissance>
+	<code_dep_naissance>{code_dep_naissance}</code_dep_naissance>
+	<libelle_dep_naissance>{libelle_dep_naissance}</libelle_dep_naissance>
+	<cod_stu>01</cod_stu>
+	<cod_rgi>1</cod_rgi>
+	<tem_brs_iaa>N</tem_brs_iaa>
+	<eta_edt_crt></eta_edt_crt>
+	<dat_edt_crt></dat_edt_crt>
+	<cod_pru>NO</cod_pru>
+	<cod_dip>{diplome}</cod_dip>
+	<cod_etp>{etape}</cod_etp>
+	<tem_rgl_sit_mil>O</tem_rgl_sit_mil>
+	<fullname>{prenom} {nom}</fullname>
+</etudiant>
