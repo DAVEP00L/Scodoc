@@ -1,0 +1,1352 @@
+{
+ "acronyme": "DUT Info", 
+ "code_specialite": "", 
+ "type_parcours": 100, 
+ "titre_officiel": "DUT Informatique", 
+ "formation_code": "FCOD2", 
+ "version": 1, 
+ "ue": [
+  {
+   "acronyme": "UE11", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Architecture mat\u00e9rielle - Syst\u00e8mes d\u2019exploitation - R\u00e9seaux", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1101", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 30.0, 
+       "abbrev": "", 
+       "numero": 1, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Introduction aux syst\u00e8mes informatiques", 
+       "heures_td": 20.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Algorithmique - Programmation - Langages", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1102", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 30.0, 
+       "abbrev": "Algorithmique", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Introduction \u00e0 l\u2019algorithmique et \u00e0 la programmation", 
+       "heures_td": 20.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "Algorithmique - Programmation - Langages Avanc\u00e9", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1103", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 20.0, 
+       "abbrev": "Structure de donn\u00e9es", 
+       "numero": 3, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Structure de donn\u00e9es et algorithmes fondamentaux", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Syst\u00e8mes de gestion de bases de donn\u00e9es", 
+     "module": [
+      {
+       "coefficient": 3.0, 
+       "code": "M1104", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 25.0, 
+       "abbrev": "BDD", 
+       "numero": 4, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Introduction aux bases de donn\u00e9es", 
+       "heures_td": 25.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Web - Internet - Mobilit\u00e9 Expression - Communication", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1105", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 25.0, 
+       "abbrev": "CDIN", 
+       "numero": 5, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Conception de documents et d\u2019interfaces num\u00e9riques", 
+       "heures_td": 20.0
+      }
+     ], 
+     "numero": 5
+    }, 
+    {
+     "titre": "Projets tutor\u00e9s", 
+     "module": [
+      {
+       "coefficient": 3.0, 
+       "code": "M1106", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "Projet", 
+       "numero": 6, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Projet tutor\u00e9 :  d\u00e9couverte", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 6
+    }
+   ], 
+   "ue_code": "UE11", 
+   "numero": 1, 
+   "titre": "Base de l'informatique", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE21", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Architecture mat\u00e9rielle - Syst\u00e8mes d\u2019exploitation - R\u00e9seaux", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2101", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Architecture et Programmation des m\u00e9canismes de base d\u2019un syst\u00e8me informatique", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Architecture mat\u00e9rielle - Syst\u00e8mes d\u2019exploitation - R\u00e9seaux avanc\u00e9", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2102", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Architecture des r\u00e9seaux", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "Algorithmique - Programmation - Langages Analyse, conception et d\u00e9veloppement d\u2019applications", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2103", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 30.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Bases de la programmation orient\u00e9e objet", 
+       "heures_td": 20.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Analyse, conception et d\u00e9veloppement d\u2019applications", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2104", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 20.0, 
+       "abbrev": "COO", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Bases de la conception orient\u00e9e objet", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Interface homme-machine", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2105", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 20.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Introduction aux interfaces homme-machine", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 5
+    }, 
+    {
+     "titre": "Syst\u00e8mes de gestion de bases de donn\u00e9es", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2106", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 20.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Programmation et administration des bases de donn\u00e9es", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 6
+    }, 
+    {
+     "titre": "Projets tutor\u00e9s", 
+     "module": [
+      {
+       "coefficient": 3.0, 
+       "code": "M2107", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Projet tutor\u00e9 : Description et planification de projet", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 7
+    }
+   ], 
+   "ue_code": "UE21", 
+   "numero": 1, 
+   "titre": "Informatique approfondie", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE31", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Architectures mat\u00e9rielles - Syst\u00e8mes d\u2019exploitation - R\u00e9seaux", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3101", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 16.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 15.0, 
+       "module_type": 0, 
+       "titre": "Principes des syst\u00e8mes d\u2019exploitation", 
+       "heures_td": 14.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Architectures mat\u00e9rielles - Syst\u00e8mes d\u2019exploitation, R\u00e9seaux", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3102", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Services r\u00e9seaux", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "Algorithmique - Programmation - Langages avanc\u00e9", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3103", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Algorithmique avanc\u00e9e", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Web - Internet - Mobilit\u00e9", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3104", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 16.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 15.0, 
+       "module_type": 0, 
+       "titre": "Programmation Web c\u00f4t\u00e9 serveur", 
+       "heures_td": 14.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Analyse, conception et d\u00e9veloppement d\u2019applications", 
+     "module": [
+      {
+       "coefficient": 16.0, 
+       "code": "M3105", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 14.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Conception et programmation objet avanc\u00e9es", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 5
+    }, 
+    {
+     "titre": "Syst\u00e8mes de gestion de bases de donn\u00e9es", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3106C", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Bases de donn\u00e9es avanc\u00e9es", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 6
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS1", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 16
+    }
+   ], 
+   "ue_code": "UCOD5", 
+   "numero": 1, 
+   "titre": "Informatique avanc\u00e9e", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE41", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Architectures mat\u00e9rielles - Syst\u00e8mes d\u2019exploitation - R\u00e9seaux", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4101C", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Administration syst\u00e8me et r\u00e9seau", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Architectures mat\u00e9rielles - Syst\u00e8mes d\u2019exploitation \u2013 R\u00e9seaux Analyse, conception et d\u00e9veloppement d\u2019applications", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4102C", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Programmation r\u00e9partie", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "Web \u2013 Internet - Mobilit\u00e9", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4103C", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Programmation Web \u2013 client riche", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Web - Internet - Mobilit\u00e9 - Mobile", 
+     "module": [
+      {
+       "coefficient": 3.0, 
+       "code": "M4104C", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Conception et d\u00e9veloppement d\u2019applications mobiles", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Analyse, conception et d\u00e9veloppement d\u2019applications", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4105C", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Compl\u00e9ments d\u2019informatique en vue d\u2019une insertion imm\u00e9diate", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 5
+    }, 
+    {
+     "titre": "Projets tutor\u00e9s", 
+     "module": [
+      {
+       "coefficient": 3.0, 
+       "code": "M4106", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Projet tutor\u00e9 \u2013 Compl\u00e9ments", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 6
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS1", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 16
+    }
+   ], 
+   "ue_code": "UCOD8", 
+   "numero": 1, 
+   "titre": "Compl\u00e9ments en informatique", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE12", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Math\u00e9matiques", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1201", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 17.0, 
+       "abbrev": "", 
+       "numero": 1, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Math\u00e9matiques discr\u00e8tes", 
+       "heures_td": 18.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Math\u00e9matiques avanc\u00e9es", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1202", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 12.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 6.0, 
+       "module_type": 0, 
+       "titre": "Alg\u00e8bre lin\u00e9aire", 
+       "heures_td": 12.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "\u00c9conomie - Gestion - Organisation - Droit", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1203", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Environnement \u00e9conomique", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Organisation", 
+     "module": [
+      {
+       "coefficient": 1.0, 
+       "code": "M1204", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Fonctionnement des organisations", 
+       "heures_td": 20.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Expression - Communication", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1205", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Fondamentaux de la communication", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 5
+    }, 
+    {
+     "titre": "Anglais", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M1206", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Anglais et Informatique", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 6
+    }, 
+    {
+     "titre": "PPP Expression - Communication", 
+     "module": [
+      {
+       "coefficient": 1.0, 
+       "code": "M1207", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Conna\u00eetre le monde professionnel", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 7
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS2", 
+       "semestre_id": 1, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 17
+    }
+   ], 
+   "ue_code": "UE12", 
+   "numero": 2, 
+   "titre": "Bases de culture scientifique, sociale et humaine", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE22", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Math\u00e9matiques", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2201", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 18.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 11.0, 
+       "module_type": 0, 
+       "titre": "Graphes et langages", 
+       "heures_td": 16.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Math\u00e9matiques avanc\u00e9es", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2202", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Analyse et m\u00e9thodes num\u00e9riques", 
+       "heures_td": 12.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "\u00c9conomie - Gestion -  Droit - Organisation", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2203", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 12.0, 
+       "module_type": 0, 
+       "titre": "Environnement comptable, financier, juridique et social", 
+       "heures_td": 18.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "\u00c9conomie - Gestion - Organisation - Droit Analyse, conception et d\u00e9veloppement d\u2019applications", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2204", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Gestion de projet informatique", 
+       "heures_td": 12.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Expression - Communication", 
+     "module": [
+      {
+       "coefficient": 1.0, 
+       "code": "M2205", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Communication, information et argumentation", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 5
+    }, 
+    {
+     "titre": "Anglais", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M2206", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 22.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Communiquer en anglais", 
+       "heures_td": 23.0
+      }
+     ], 
+     "numero": 6
+    }, 
+    {
+     "titre": "PPP", 
+     "module": [
+      {
+       "coefficient": 1.0, 
+       "code": "M2207", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "PPP - Identifier ses comp\u00e9tences", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 7
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS2", 
+       "semestre_id": 2, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 17
+    }
+   ], 
+   "ue_code": "UCOD4", 
+   "numero": 2, 
+   "titre": "Approfondissements en culture scientifique, sociale et humaine", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE32", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Math\u00e9matiques", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3201", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 14.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 15.0, 
+       "module_type": 0, 
+       "titre": "Probabilit\u00e9s et statistique", 
+       "heures_td": 16.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Math\u00e9matiques avanc\u00e9es", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3202C", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 14.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Mod\u00e9lisations math\u00e9matiques", 
+       "heures_td": 16.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "\u00c9conomie - Gestion - Organisation - Droit", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3203", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 10.0, 
+       "module_type": 0, 
+       "titre": "Droit des technologies de l\u2019information et de la communication", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Gestion", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3204", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 15.0, 
+       "module_type": 0, 
+       "titre": "Gestion des syst\u00e8mes d\u2019information", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Expression - Communication", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3205", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Communication professionnelle", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 5
+    }, 
+    {
+     "titre": "Anglais", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3206", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 22.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Collaborer en anglais", 
+       "heures_td": 23.0
+      }
+     ], 
+     "numero": 6
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS2", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 16
+    }
+   ], 
+   "ue_code": "UCOD6", 
+   "numero": 2, 
+   "titre": "Culture scientifique, sociale et humaine avanc\u00e9es", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE33", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "Analyse, conception et d\u00e9veloppement d\u2019applications \u00c9conomie - gestion - Organisation - Droit", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3301", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 24.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 14.0, 
+       "module_type": 0, 
+       "titre": "M\u00e9thodologie de la production d\u2019applications", 
+       "heures_td": 22.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Projets tutor\u00e9s", 
+     "module": [
+      {
+       "coefficient": 3.0, 
+       "code": "M3302", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Projet tutor\u00e9 - Mise en situation professionnelle", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "PPP", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M3303", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "PPP - Pr\u00e9ciser son projet", 
+       "heures_td": 10.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS2", 
+       "semestre_id": 3, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 13
+    }
+   ], 
+   "ue_code": "UCOD7", 
+   "numero": 2, 
+   "titre": "M\u00e9thodologie et projets", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE42", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "\u00c9conomie - Gestion - Organisation - Droit", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4201C", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Ateliers de cr\u00e9ation d\u2019entreprise", 
+       "heures_td": 12.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Math\u00e9matiques", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4202C", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 10.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 8.0, 
+       "module_type": 0, 
+       "titre": "Introduction \u00e0 la recherche op\u00e9rationnelle et aide \u00e0 la d\u00e9cision", 
+       "heures_td": 12.0
+      }
+     ], 
+     "numero": 2
+    }, 
+    {
+     "titre": "Expression \u2013 Communication", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4203", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Communication dans les organisations", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 3
+    }, 
+    {
+     "titre": "Anglais", 
+     "module": [
+      {
+       "coefficient": 2.0, 
+       "code": "M4204", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 15.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Travailler en anglais", 
+       "heures_td": 15.0
+      }
+     ], 
+     "numero": 4
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS2", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 14
+    }
+   ], 
+   "ue_code": "UCOD9", 
+   "numero": 2, 
+   "titre": "Compl\u00e9ments de culture scientifique, sociale et humaine", 
+   "type": 0
+  }, 
+  {
+   "acronyme": "UE43", 
+   "coefficient": 0.0, 
+   "is_external": 0, 
+   "code_apogee": "", 
+   "matiere": [
+    {
+     "titre": "STAGE", 
+     "module": [
+      {
+       "coefficient": 12.0, 
+       "code": "M4301", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 10, 
+       "heures_cours": 0.0, 
+       "module_type": 0, 
+       "titre": "Stage professionnel", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 1
+    }, 
+    {
+     "titre": "Malus", 
+     "module": [
+      {
+       "coefficient": 0.0, 
+       "code": "MALUS3", 
+       "semestre_id": 4, 
+       "code_apogee": "", 
+       "ects": "", 
+       "heures_tp": 0.0, 
+       "abbrev": "", 
+       "numero": 0, 
+       "heures_cours": 0.0, 
+       "module_type": 1, 
+       "titre": "", 
+       "heures_td": 0.0
+      }
+     ], 
+     "numero": 11
+    }
+   ], 
+   "ue_code": "UCOD10", 
+   "numero": 3, 
+   "titre": "Mise en situation professionnelle", 
+   "type": 0
+  }
+ ], 
+ "titre": "DUT Informatique", 
+ "formation_id": "FORM234"
+}
