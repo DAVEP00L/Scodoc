@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}Une erreur est survenue !{% endblock %}
+{% block body %}
+<h1>Une erreur est survenue !</h1>
+<p>Oups...</tt> <span style="color:red;"><b>ScoDoc version <span style="font-size: 120%;">{{SCOVERSION}}</span></b></span> a
+    un problème, désolé.</p>
+<p><tt style="font-size:60%">{{date}}</tt></p>
+
+<p> Si le problème persiste, contacter l'administrateur de votre site,
+    ou écrire la liste "notes" <a href="mailto:notes@listes.univ-paris13.fr">notes@listes.univ-paris13.fr</a> en
+    indiquant la version du logiciel
+    <br />
+    (plus d'informations sur les listes de diffusion <a href="https://scodoc.org/ListesDeDiffusion/">voir
+        cette page</a>).
+</p>
+
+<p><a href="{{ url_for('scodoc.index') }}">retour à la page d'accueil</a></p>
+
+{% endblock %}
