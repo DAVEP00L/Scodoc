@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formation acronyme="DUT Info" code_specialite="" type_parcours="100" titre_officiel="DUT Informatique" formation_code="FCOD2" version="1" titre="DUT Informatique" formation_id="FORM234">
+	<ue acronyme="UE11" coefficient="0.0" is_external="0" code_apogee="" ue_code="UE11" numero="1" titre="Base de l'informatique" type="0">
+		<matiere titre="Architecture matérielle - Systèmes d’exploitation - Réseaux" numero="1">
+			<module coefficient="2.0" code="M1101" code_apogee="" ects="" heures_tp="30.0" numero="1" abbrev="" heures_cours="10.0" module_type="0" titre="Introduction aux systèmes informatiques" semestre_id="1" heures_td="20.0" />
+		</matiere>
+		<matiere titre="Algorithmique - Programmation - Langages" numero="2">
+			<module coefficient="2.0" code="M1102" code_apogee="" ects="" heures_tp="30.0" numero="10" abbrev="Algorithmique" heures_cours="10.0" module_type="0" titre="Introduction à l’algorithmique et à la programmation" semestre_id="1" heures_td="20.0" />
+		</matiere>
+		<matiere titre="Algorithmique - Programmation - Langages Avancé" numero="3">
+			<module coefficient="2.0" code="M1103" code_apogee="" ects="" heures_tp="20.0" numero="3" abbrev="Structure de données" heures_cours="10.0" module_type="0" titre="Structure de données et algorithmes fondamentaux" semestre_id="1" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Systèmes de gestion de bases de données" numero="4">
+			<module coefficient="3.0" code="M1104" code_apogee="" ects="" heures_tp="25.0" numero="4" abbrev="BDD" heures_cours="10.0" module_type="0" titre="Introduction aux bases de données" semestre_id="1" heures_td="25.0" />
+		</matiere>
+		<matiere titre="Web - Internet - Mobilité Expression - Communication" numero="5">
+			<module coefficient="2.0" code="M1105" code_apogee="" ects="" heures_tp="25.0" numero="5" abbrev="CDIN" heures_cours="0.0" module_type="0" titre="Conception de documents et d’interfaces numériques" semestre_id="1" heures_td="20.0" />
+		</matiere>
+		<matiere titre="Projets tutorés" numero="6">
+			<module coefficient="3.0" code="M1106" code_apogee="" ects="" heures_tp="0.0" numero="6" abbrev="Projet" heures_cours="0.0" module_type="0" titre="Projet tutoré :  découverte" semestre_id="1" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE21" coefficient="0.0" is_external="0" code_apogee="" ue_code="UE21" numero="1" titre="Informatique approfondie" type="0">
+		<matiere titre="Architecture matérielle - Systèmes d’exploitation - Réseaux" numero="1">
+			<module coefficient="2.0" code="M2101" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Architecture et Programmation des mécanismes de base d’un système informatique" semestre_id="2" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Architecture matérielle - Systèmes d’exploitation - Réseaux avancé" numero="2">
+			<module coefficient="2.0" code="M2102" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Architecture des réseaux" semestre_id="2" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Algorithmique - Programmation - Langages Analyse, conception et développement d’applications" numero="3">
+			<module coefficient="2.0" code="M2103" code_apogee="" ects="" heures_tp="30.0" numero="10" abbrev="" heures_cours="10.0" module_type="0" titre="Bases de la programmation orientée objet" semestre_id="2" heures_td="20.0" />
+		</matiere>
+		<matiere titre="Analyse, conception et développement d’applications" numero="4">
+			<module coefficient="2.0" code="M2104" code_apogee="" ects="" heures_tp="20.0" numero="10" abbrev="COO" heures_cours="10.0" module_type="0" titre="Bases de la conception orientée objet" semestre_id="2" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Interface homme-machine" numero="5">
+			<module coefficient="2.0" code="M2105" code_apogee="" ects="" heures_tp="20.0" numero="10" abbrev="" heures_cours="10.0" module_type="0" titre="Introduction aux interfaces homme-machine" semestre_id="2" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Systèmes de gestion de bases de données" numero="6">
+			<module coefficient="2.0" code="M2106" code_apogee="" ects="" heures_tp="20.0" numero="10" abbrev="" heures_cours="10.0" module_type="0" titre="Programmation et administration des bases de données" semestre_id="2" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Projets tutorés" numero="7">
+			<module coefficient="3.0" code="M2107" code_apogee="" ects="" heures_tp="0.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Projet tutoré : Description et planification de projet" semestre_id="2" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE31" coefficient="0.0" is_external="0" code_apogee="" ue_code="UCOD5" numero="1" titre="Informatique avancée" type="0">
+		<matiere titre="Architectures matérielles - Systèmes d’exploitation - Réseaux" numero="1">
+			<module coefficient="2.0" code="M3101" code_apogee="" ects="" heures_tp="16.0" numero="10" abbrev="" heures_cours="15.0" module_type="0" titre="Principes des systèmes d’exploitation" semestre_id="3" heures_td="14.0" />
+		</matiere>
+		<matiere titre="Architectures matérielles - Systèmes d’exploitation, Réseaux" numero="2">
+			<module coefficient="2.0" code="M3102" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Services réseaux" semestre_id="3" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Algorithmique - Programmation - Langages avancé" numero="3">
+			<module coefficient="2.0" code="M3103" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Algorithmique avancée" semestre_id="3" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Web - Internet - Mobilité" numero="4">
+			<module coefficient="2.0" code="M3104" code_apogee="" ects="" heures_tp="16.0" numero="10" abbrev="" heures_cours="15.0" module_type="0" titre="Programmation Web côté serveur" semestre_id="3" heures_td="14.0" />
+		</matiere>
+		<matiere titre="Analyse, conception et développement d’applications" numero="5">
+			<module coefficient="16.0" code="M3105" code_apogee="" ects="" heures_tp="14.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Conception et programmation objet avancées" semestre_id="3" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Systèmes de gestion de bases de données" numero="6">
+			<module coefficient="2.0" code="M3106C" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Bases de données avancées" semestre_id="3" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Malus" numero="16">
+			<module coefficient="0.0" code="MALUS1" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="3" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE41" coefficient="0.0" is_external="0" code_apogee="" ue_code="UCOD8" numero="1" titre="Compléments en informatique" type="0">
+		<matiere titre="Architectures matérielles - Systèmes d’exploitation - Réseaux" numero="1">
+			<module coefficient="2.0" code="M4101C" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Administration système et réseau" semestre_id="4" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Architectures matérielles - Systèmes d’exploitation – Réseaux Analyse, conception et développement d’applications" numero="2">
+			<module coefficient="2.0" code="M4102C" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Programmation répartie" semestre_id="4" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Web – Internet - Mobilité" numero="3">
+			<module coefficient="2.0" code="M4103C" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Programmation Web – client riche" semestre_id="4" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Web - Internet - Mobilité - Mobile" numero="4">
+			<module coefficient="3.0" code="M4104C" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Conception et développement d’applications mobiles" semestre_id="4" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Analyse, conception et développement d’applications" numero="5">
+			<module coefficient="2.0" code="M4105C" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Compléments d’informatique en vue d’une insertion immédiate" semestre_id="4" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Projets tutorés" numero="6">
+			<module coefficient="3.0" code="M4106" code_apogee="" ects="" heures_tp="0.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Projet tutoré – Compléments" semestre_id="4" heures_td="0.0" />
+		</matiere>
+		<matiere titre="Malus" numero="16">
+			<module coefficient="0.0" code="MALUS1" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="4" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE12" coefficient="0.0" is_external="0" code_apogee="" ue_code="UE12" numero="2" titre="Bases de culture scientifique, sociale et humaine" type="0">
+		<matiere titre="Mathématiques" numero="1">
+			<module coefficient="2.0" code="M1201" code_apogee="" ects="" heures_tp="17.0" numero="1" abbrev="" heures_cours="10.0" module_type="0" titre="Mathématiques discrètes" semestre_id="1" heures_td="18.0" />
+		</matiere>
+		<matiere titre="Mathématiques avancées" numero="2">
+			<module coefficient="2.0" code="M1202" code_apogee="" ects="" heures_tp="12.0" numero="10" abbrev="" heures_cours="6.0" module_type="0" titre="Algèbre linéaire" semestre_id="1" heures_td="12.0" />
+		</matiere>
+		<matiere titre="Économie - Gestion - Organisation - Droit" numero="3">
+			<module coefficient="2.0" code="M1203" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="10.0" module_type="0" titre="Environnement économique" semestre_id="1" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Organisation" numero="4">
+			<module coefficient="1.0" code="M1204" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="10.0" module_type="0" titre="Fonctionnement des organisations" semestre_id="1" heures_td="20.0" />
+		</matiere>
+		<matiere titre="Expression - Communication" numero="5">
+			<module coefficient="2.0" code="M1205" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Fondamentaux de la communication" semestre_id="1" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Anglais" numero="6">
+			<module coefficient="2.0" code="M1206" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Anglais et Informatique" semestre_id="1" heures_td="15.0" />
+		</matiere>
+		<matiere titre="PPP Expression - Communication" numero="7">
+			<module coefficient="1.0" code="M1207" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Connaître le monde professionnel" semestre_id="1" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Malus" numero="17">
+			<module coefficient="0.0" code="MALUS2" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="1" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE22" coefficient="0.0" is_external="0" code_apogee="" ue_code="UCOD4" numero="2" titre="Approfondissements en culture scientifique, sociale et humaine" type="0">
+		<matiere titre="Mathématiques" numero="1">
+			<module coefficient="2.0" code="M2201" code_apogee="" ects="" heures_tp="18.0" numero="10" abbrev="" heures_cours="11.0" module_type="0" titre="Graphes et langages" semestre_id="2" heures_td="16.0" />
+		</matiere>
+		<matiere titre="Mathématiques avancées" numero="2">
+			<module coefficient="2.0" code="M2202" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Analyse et méthodes numériques" semestre_id="2" heures_td="12.0" />
+		</matiere>
+		<matiere titre="Économie - Gestion -  Droit - Organisation" numero="3">
+			<module coefficient="2.0" code="M2203" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="12.0" module_type="0" titre="Environnement comptable, financier, juridique et social" semestre_id="2" heures_td="18.0" />
+		</matiere>
+		<matiere titre="Économie - Gestion - Organisation - Droit Analyse, conception et développement d’applications" numero="4">
+			<module coefficient="2.0" code="M2204" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Gestion de projet informatique" semestre_id="2" heures_td="12.0" />
+		</matiere>
+		<matiere titre="Expression - Communication" numero="5">
+			<module coefficient="1.0" code="M2205" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Communication, information et argumentation" semestre_id="2" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Anglais" numero="6">
+			<module coefficient="2.0" code="M2206" code_apogee="" ects="" heures_tp="22.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Communiquer en anglais" semestre_id="2" heures_td="23.0" />
+		</matiere>
+		<matiere titre="PPP" numero="7">
+			<module coefficient="1.0" code="M2207" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="PPP - Identifier ses compétences" semestre_id="2" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Malus" numero="17">
+			<module coefficient="0.0" code="MALUS2" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="2" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE32" coefficient="0.0" is_external="0" code_apogee="" ue_code="UCOD6" numero="2" titre="Culture scientifique, sociale et humaine avancées" type="0">
+		<matiere titre="Mathématiques" numero="1">
+			<module coefficient="2.0" code="M3201" code_apogee="" ects="" heures_tp="14.0" numero="10" abbrev="" heures_cours="15.0" module_type="0" titre="Probabilités et statistique" semestre_id="3" heures_td="16.0" />
+		</matiere>
+		<matiere titre="Mathématiques avancées" numero="2">
+			<module coefficient="2.0" code="M3202C" code_apogee="" ects="" heures_tp="14.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Modélisations mathématiques" semestre_id="3" heures_td="16.0" />
+		</matiere>
+		<matiere titre="Économie - Gestion - Organisation - Droit" numero="3">
+			<module coefficient="2.0" code="M3203" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="10.0" module_type="0" titre="Droit des technologies de l’information et de la communication" semestre_id="3" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Gestion" numero="4">
+			<module coefficient="2.0" code="M3204" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="15.0" module_type="0" titre="Gestion des systèmes d’information" semestre_id="3" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Expression - Communication" numero="5">
+			<module coefficient="2.0" code="M3205" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Communication professionnelle" semestre_id="3" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Anglais" numero="6">
+			<module coefficient="2.0" code="M3206" code_apogee="" ects="" heures_tp="22.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Collaborer en anglais" semestre_id="3" heures_td="23.0" />
+		</matiere>
+		<matiere titre="Malus" numero="16">
+			<module coefficient="0.0" code="MALUS2" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="3" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE33" coefficient="0.0" is_external="0" code_apogee="" ue_code="UCOD7" numero="2" titre="Méthodologie et projets" type="0">
+		<matiere titre="Analyse, conception et développement d’applications Économie - gestion - Organisation - Droit" numero="1">
+			<module coefficient="2.0" code="M3301" code_apogee="" ects="" heures_tp="24.0" numero="10" abbrev="" heures_cours="14.0" module_type="0" titre="Méthodologie de la production d’applications" semestre_id="3" heures_td="22.0" />
+		</matiere>
+		<matiere titre="Projets tutorés" numero="2">
+			<module coefficient="3.0" code="M3302" code_apogee="" ects="" heures_tp="0.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Projet tutoré - Mise en situation professionnelle" semestre_id="3" heures_td="0.0" />
+		</matiere>
+		<matiere titre="PPP" numero="3">
+			<module coefficient="2.0" code="M3303" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="PPP - Préciser son projet" semestre_id="3" heures_td="10.0" />
+		</matiere>
+		<matiere titre="Malus" numero="13">
+			<module coefficient="0.0" code="MALUS2" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="3" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE42" coefficient="0.0" is_external="0" code_apogee="" ue_code="UCOD9" numero="2" titre="Compléments de culture scientifique, sociale et humaine" type="0">
+		<matiere titre="Économie - Gestion - Organisation - Droit" numero="1">
+			<module coefficient="2.0" code="M4201C" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Ateliers de création d’entreprise" semestre_id="4" heures_td="12.0" />
+		</matiere>
+		<matiere titre="Mathématiques" numero="2">
+			<module coefficient="2.0" code="M4202C" code_apogee="" ects="" heures_tp="10.0" numero="10" abbrev="" heures_cours="8.0" module_type="0" titre="Introduction à la recherche opérationnelle et aide à la décision" semestre_id="4" heures_td="12.0" />
+		</matiere>
+		<matiere titre="Expression – Communication" numero="3">
+			<module coefficient="2.0" code="M4203" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Communication dans les organisations" semestre_id="4" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Anglais" numero="4">
+			<module coefficient="2.0" code="M4204" code_apogee="" ects="" heures_tp="15.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Travailler en anglais" semestre_id="4" heures_td="15.0" />
+		</matiere>
+		<matiere titre="Malus" numero="14">
+			<module coefficient="0.0" code="MALUS2" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="4" heures_td="0.0" />
+		</matiere>
+	</ue>
+	<ue acronyme="UE43" coefficient="0.0" is_external="0" code_apogee="" ue_code="UCOD10" numero="3" titre="Mise en situation professionnelle" type="0">
+		<matiere titre="STAGE" numero="1">
+			<module coefficient="12.0" code="M4301" code_apogee="" ects="" heures_tp="0.0" numero="10" abbrev="" heures_cours="0.0" module_type="0" titre="Stage professionnel" semestre_id="4" heures_td="0.0" />
+		</matiere>
+		<matiere titre="Malus" numero="11">
+			<module coefficient="0.0" code="MALUS3" code_apogee="" ects="" heures_tp="0.0" numero="0" abbrev="" heures_cours="0.0" module_type="1" titre="" semestre_id="4" heures_td="0.0" />
+		</matiere>
+	</ue>
+</formation>
