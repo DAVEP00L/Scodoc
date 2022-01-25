@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Pre-installation de scodoc
+
+# ------------ Safety checks
+# Version majeure de Debian (..., 9, 10, 11)
+
+if [ -e /etc/debian_version ]
+then 
+    debian_version=$(cat /etc/debian_version)
+    debian_version=${debian_version%%.*}
+    echo "Detected Debian version: ${debian_version}"
+else
+    echo "can't detect Debian version"
+fi
+# 
+echo arch="$(arch)"
+
+# if [ "$(arch)" != "x86_64" ]
+# then
+#    echo
+#    echo "Version du systeme Linux Debian incompatible (pas X86 64 bits)"
+#    echo
+#    exit 1
+# fi

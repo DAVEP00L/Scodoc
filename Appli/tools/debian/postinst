@@ -1,0 +1,134 @@
+#!/bin/bash
+
+# Post-installation de scodoc
+# ici, le répertoire /opt/scodoc vient d'être installé
+
+cd /opt/scodoc || (echo "Error chdir to /opt/scodoc"; exit 1)
+
+# On peut donc charger la config:
+source /opt/scodoc/tools/config.sh
+source /opt/scodoc/tools/utils.sh
+
+# -- Création au besoin de notre utilisateur
+# adduser --system "${SCODOC_USER}"
+check_create_scodoc_user
+
+# -- Répertoires /opt/scodoc donné à scodoc
+change_scodoc_file_ownership
+# --- Création au besoin de /opt/scodoc-data
+set_scodoc_var_dir
+
+# ------------ LOCALES (pour compat bases ScoDoc 7 et plus anciennes)
+for locname in "en_US.UTF-8"
+do
+    outname=$(echo ${locname//-/} | tr '[A-Z]' '[a-z]')
+    if [ "$(locale -a | grep -E -i ^${outname}$ | wc -l)" -lt 1 ]
+    then
+        echo adding $locname
+        echo "$locname ${locname##*.}" >> /etc/locale.gen
+        /usr/sbin/locale-gen --keep-existing 
+    fi
+done
+echo "debian postinst: scodoc9 systemd service is $(systemctl is-active scodoc9)"
+# On a besoin d'un postgresql lancé pour la mise à jour
+systemctl restart postgresql
+
+# Le numero de version complet, genre 9.0.0
+SCODOC_RELEASE=$(grep SCOVERSION $SCODOC_DIR/sco_version.py | awk '{ print substr($3, 2, length($3)-2) }')
+if [ -e "${SCODOC_VERSION_DIR}/scodoc.sn" ]
+then
+    # upgrading
+    echo "mode: upgrade"
+    mode=upgrade
+    SN=$(cat "${SCODOC_VERSION_DIR}"/scodoc.sn)
+    if [[ ! "${SN}" =~ ^[0-9].* ]]
+    then
+        SN='' # fix for invalid previous replies
+    fi 
+else
+    # first install
+    echo "mode: install"
+    mode=install
+    SN=""
+fi
+
+CMD="curl --fail --connect-timeout 5 --silent https://scodoc.org/scodoc-installmgr/version?mode=$mode\&release=${SCODOC_RELEASE}\&sn=${SN}"
+
+SVERSION="$(${CMD})"
+if [ "$?" == 0 ]; then
+  #echo "answer=${SVERSION}" 
+  echo "${SVERSION}" > "${SCODOC_VERSION_DIR}"/scodoc.sn
+else
+  echo 'Warning: cannot connect to scodoc release server'  
+fi
+
+# ------------ LIEN VERS .env
+# Pour conserver le .env entre les mises à jour, on le génère dans
+# /opt/scodoc-data/;env et on le lie:
+if [ ! -e "$SCODOC_DIR/.env" ] && [ ! -L "$SCODOC_DIR/.env" ]
+then
+    ln -s "$SCODOC_VAR_DIR/.env" "$SCODOC_DIR"
+fi
+
+# ------------ CREATION DU VIRTUALENV
+# donc re-créé sur le client à chaque install ou upgrade
+#echo "Creating python3 virtualenv..."
+su -c "(cd $SCODOC_DIR && python3 -m venv venv)" "$SCODOC_USER" || die "Error creating Python 3 virtualenv"
+
+# ------------ INSTALL DES PAQUETS PYTHON (3.9)
+# pip in our env, as user "scodoc"
+su -c "(cd $SCODOC_DIR && source venv/bin/activate && pip install wheel && pip install -r requirements-3.9.txt)" "$SCODOC_USER" || die "Error installing python packages"
+
+# --- NGINX
+# Evite d'écraser: il faudrait ici présenter un dialogue "fichier local modifié, ..."
+if [ ! -e /etc/nginx/sites-available/scodoc9.nginx ]
+then
+  cp -p /etc/nginx/sites-available/scodoc9.nginx.distrib /etc/nginx/sites-available/scodoc9.nginx  || die "can't copy nginx config"
+fi
+if [ ! -L /etc/nginx/sites-enabled/scodoc9.nginx ]
+then
+    echo "Enabling scodoc9 in nginx"
+    ln -s /etc/nginx/sites-available/scodoc9.nginx /etc/nginx/sites-enabled/
+fi
+/bin/rm -f /etc/nginx/sites-enabled/default
+
+# ------------  POSTGRESQL
+# --- Ensure postgres user "scodoc" ($POSTGRES_USER) exists
+init_postgres_user
+
+# ------------  BASE DE DONNEES
+# gérées avec Flask-Migrate (Alembic/SQLAlchemy)
+# Si la base SCODOC existe, tente de la mettre à jour
+# (Ne gère pas les bases DEV et TEST)
+n=$(su -c "psql -l | grep -c -E '^[[:blank:]]*SCODOC[[:blank:]]*\|'" "$SCODOC_USER")
+if [ "$n" == 1 ]
+then
+    echo "Upgrading existing SCODOC database..."
+    # utilise les scripts dans migrations/version/
+    # pour mettre à jour notre base (en tant qu'utilisateur scodoc)
+    export FLASK_ENV="production"
+    su -c "(cd $SCODOC_DIR && source venv/bin/activate && flask db upgrade)" "$SCODOC_USER"
+fi
+
+# ------------ LOGROTATE
+cp "$SCODOC_DIR"/tools/etc/scodoc-logrotate /etc/logrotate.d/scodoc
+chmod 644 /etc/logrotate.d/scodoc
+
+# ------------ CONFIG SERVICE SCODOC
+echo 
+echo "Installation du service systemd scodoc9..."
+cp "$SCODOC_DIR"/tools/etc/scodoc9.service /etc/systemd/system/
+systemctl daemon-reload
+
+# ------------ MISES A JOUR
+cp "$SCODOC_DIR"/tools/etc/scodoc-updater.service /etc/systemd/system
+cp "$SCODOC_DIR"/tools/etc/scodoc-updater.timer /etc/systemd/system
+systemctl enable scodoc-updater.timer
+systemctl start scodoc-updater.timer
+
+# --- SYSTEMD: on a (peut-être) installé un fichier de service
+systemctl daemon-reload
+systemctl enable scodoc9
+
+# --- RESTART SCODOC
+systemctl restart scodoc9
