@@ -1,0 +1,18 @@
+/opt/scodoc-data/log/scodoc.log {
+    weekly
+    missingok
+    rotate 64
+    compress
+    notifempty
+    dateext
+    create 0644 scodoc scodoc
+}
+/opt/scodoc-datalog/scodoc_exc.log {
+    weekly
+    missingok
+    rotate 64
+    compress
+    notifempty
+    dateext
+    create 0644 scodoc scodoc
+}

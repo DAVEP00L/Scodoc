@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# usage: backup_db9 dbname
+# Dump une base postgresql, et garde plusieurs dumps dans le passe
+# (configurable dans le script backup_rotation.sh)
+# Les dumps sont compresses (gzip).
+#
+# E. Viennet pour ScoDoc, 2014, 2021 pour ScoDoc 9
+# (ce script est meilleur que l'ancien backup-db, car l'espace entre 
+#   deux sauvegardes dépend de leur anciennete)
+#
+#
+# Note: pour restaurer un backup (en supprimant la base existante !):
+#
+# 0- Arreter scodoc: systemctl stop scodoc
+#
+# Puis en tant qu'utilisateur scodoc:  su scodoc
+# 1- supprimer la base existante si elle existe: dropdb SCODOC
+#
+# 2- recreer la base, vide: createdb -E UTF-8 SCOXXX
+#     /opt/scodoc/tools/create_database.sh SCODOC
+# 3- pg_restore  -d SCODOC SCODOC_pgdump
+#
+# Revenir a l'utilisateur root: exit
+# 4- Relancer scodoc: systemctl start scodoc
+
+DBNAME=$1
+DUMPBASE="$DBNAME"-BACKUPS
+DUMPFILE="$DUMPBASE"/incoming/"$DBNAME"_pgdump
+
+
+# 1-Check if base pathname for backups exist
+if [ ! -e ${DUMPBASE} ]; then
+    mkdir ${DUMPBASE}
+fi
+
+# Initialize subdirs if needed
+for s in incoming backup.hourly backup.daily backup.weekly backup.monthly
+do
+    if [ ! -e ${DUMPBASE}/"$s" ]; then
+        mkdir ${DUMPBASE}/"$s"
+    fi
+done
+
+
+# 2- Dump postgresql data
+pg_dump --format=t "$DBNAME" -f $DUMPFILE
+
+gzip $DUMPFILE
+
+# 3- Rotate backups: remove unneeded copies
+/opt/scodoc/tools/backups/backup_rotation.sh "$DUMPBASE"
