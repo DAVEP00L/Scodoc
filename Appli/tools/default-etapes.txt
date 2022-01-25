@@ -1,0 +1,20 @@
+# Etapes Apogee par defaut: a adapter a votre cas
+# Les etapes sont d'abord demandees au portail 
+# et en cas d'echec lues dans ce fichier
+#
+# E. Viennet, 2007
+
+# Format: Departement : Code_etape_apogee : nom de la formation
+# Le code departement est celui indiqué par la propriété
+# "portal_dept_name" du département.
+
+# Attention: le codage de ce fichier doit etre le même que 
+# celui de ScoDoc (utf-8)
+
+rt : V1RT  : DUT Réseaux et Télécommunications 1
+rt : V2RT2 : DUT Réseaux et Télécommunications 2
+rt : V3ASR3 : Licence Pro R&T ASUR (FC)
+rt : V3ASR2 : Licence Pro R&T ASUR (Apprentissage)
+rt : V3ON  : Licence pro. Electronique, Optique et Nanotechnologies
+gea: V1GE  : DUT Gestion des Entreprises et Administration 1
+gea: V2GE  : DUT Gestion des Entreprises et Administration 2
