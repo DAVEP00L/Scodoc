@@ -1,0 +1,13 @@
+
+/* feuille style calendrier absences */
+
+table.tcellevt { border-spacing: 0;  border: 0px; padding: 0; border-spacing: 0; border-style: none}
+table.tr.rcellevt { border: 0px; padding: 0  }
+table.td.cellevtleft   { padding: 0; border-style: none; text-align: left; width: 50%; }
+table.td.cellevtright  { padding: 0; border-style: none; text-align: right; width: 50%; }
+
+.maincalendar, .monthcalendar { font-family: monospace; }
+
+tr.currentweek {
+ background-color: yellow;
+}
