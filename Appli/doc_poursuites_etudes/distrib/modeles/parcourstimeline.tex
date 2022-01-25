@@ -1,0 +1,67 @@
+%% Original : Cléo BARAS
+%%
+%% Version 1.0
+%%
+%% Ce fichier est distribué par ScoDoc
+%%
+%% Si vous voulez le modifier sur le serveur, copiez le dans
+%% ../local/
+%% et éditez votre copie dans local.
+%%
+
+\definecolor{ugagray}{rgb}{0.42,0.42,0.42}
+
+% define global counters
+\newcounter{yearcount}
+
+
+\newcounter{leftcount}
+
+% env parcourstimeline (d'après copyright (c) 2016 Jan Küster)
+% param 1: année de début 
+% param 2: année de fin
+% param 3: nombre de semestre
+% param 4: largeur totale
+\newenvironment{parcourstimeline}[4]{
+
+	% param 1:	no
+	% param 2:	Nom
+	\newcommand{\parcoursevent}[3] {
+		\pgfmathparse{\largeur*(##1-1)+\largeur/2+ \marge}\let\startexp\pgfmathresult
+
+	\node[draw,color=white,] (Ev##1) at (\startexp,0.7){
+			\textcolor{black}{##2}
+		};
+		\node[draw,color=white,] (Ev##1) at (\startexp,-0.6){
+			\textcolor{black}{##3}
+		};
+}
+
+	%------------------------------------------------------------
+	%	BEGIN
+	%------------------------------------------------------------
+
+	\begin{tikzpicture}
+
+	%calc pas = number of years
+ 	\pgfmathparse{(#4/#3)}\let\pas\pgfmathresult
+			\pgfmathparse{\pas*0.9}\let\largeur\pgfmathresult
+	\pgfmathparse{(#4-\largeur*#3)/2}\let\marge\pgfmathresult
+	\draw[draw=ugagray,line width=2pt] (0,0) -- (#4,0) ;	%the timeline
+
+	%for each year put a horizontal line in place
+	\setcounter{yearcount}{1}
+	\whiledo{\value{yearcount} < #3}{ % \fullrange}{
+		\draw[fill=white,draw=ugagray, line width=2pt]  (\largeur*\value{yearcount}+\marge+0.,0) circle (0.1);
+		\stepcounter{yearcount}
+	}
+
+	%start year
+	\node[draw,color=ugagray,rectangle,line width=2pt,fill=ugagray!20,rounded corners=3pt] (Yd) at(0,0){\textcolor{black}{\textbf{\small#1}}};
+
+	%end year
+	\node[draw,color=ugagray,rectangle,line width=2pt,fill=ugagray!20,rounded corners=3pt] (Yd) at(#4,0){\textcolor{black}{\textbf{\small#2}}};
+	
+
+}%end begin part of newenv
+{\end{tikzpicture}}
