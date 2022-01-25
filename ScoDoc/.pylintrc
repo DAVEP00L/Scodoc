@@ -1,0 +1,6 @@
+[[MESSAGES CONTROL]
+# pylint and black disagree...
+disable=bad-continuation
+
+[TYPECHECK]
+ignored-classes=Permission,SQLObject,Registrant,scoped_session
