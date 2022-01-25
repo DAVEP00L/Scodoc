@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+
+<h2 class="formsemestre">{{ page_title }}</h2>
+<h3>Opération effectuée</h3>
+
+{% if ignored_zipfiles %}
+<h4>Fichiers ignorés dans le zip:</h4>
+<ul>
+    {% for name in ignored_zipfiles %}
+    <li>{{name}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% if unmatched_files %}
+<h4>Fichiers indiqués dans la feuille mais non trouvés dans le zip:</h4>
+<ul>
+    {% for name in unmatched_files %}
+    <li>{{name}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% if stored_etud_filename %}
+<h4>Fichiers chargés:</h4>
+<ul>
+    {% for (etud, name) in stored_etud_filename %}
+    <li>{{etud["nomprenom"]}}: <tt>{{name}}</tt></li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<div>
+    <p><a href="{{ next_page | safe }}">Continuer</a>
+</div>
+
+{% endblock %}

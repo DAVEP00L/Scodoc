@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+<h2>ScoDoc 9 - suivi scolarité</h2>
+
+{% if not current_user.is_anonymous %}
+<p>Bonjour <font color="red"><b>{{current_user.get_nomcomplet()}}</b>
+    </font>.</p>
+<p>N'oubliez pas de vous <a href="{{url_for('auth.logout')}}">déconnecter</a> après usage.</p>
+{% endif %}
+
+<ul class="main">
+    {% for dept in depts %}
+    <li>
+        <a class="stdlink {{'link_accessible' if current_user.has_permission(Permission.ScoView, dept=dept.acronym) else 'link_unauthorized'}}"
+            href="{{url_for('scolar.index_html', scodoc_dept=dept.acronym)}}">Département
+            {{dept.preferences.filter_by(name="DeptName").first().value}}</a>
+    </li>
+    {% else %}
+    <li>
+        <b>Aucun département défini !</b>
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% if current_user.is_authenticated %}
+<form action="{{url_for('scodoc.table_etud_in_accessible_depts')}}" method="POST">
+    <b>Chercher étudiant:</b>
+    <input type="text" name="expnom" width="12" spellcheck="false" value="">
+    <input type="submit" value="Chercher">
+    <br />(entrer une partie du nom ou le code NIP, cherche dans tous les départements autorisés)
+</form>
+{% endif %}
+
+<!-- 
+<div style="margin-top: 1cm;">
+    <p><a href="/ScoDoc/static/mobile">Charger la version mobile (expérimentale)</a></p>
+</div> -->
+
+<div style="margin-top: 1cm;">
+    Service réservé aux personnels et enseignants, basé sur <a href="{{url_for('scodoc.about')}}">le logiciel libre
+        ScoDoc.</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="/ScoDoc/static/css/scodoc.css">
+{% endblock %}
+
+{% block title %}
+{% if title %}{{ title }} - ScoDoc{% else %}Welcome to ScoDoc{% endif %}
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ url_for('scodoc.index') }}">ScoDoc</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav">
+            {% if current_user.is_administrator() %}
+                <li><a href="{{ url_for('scodoc.configuration') }}">Configuration</a></li>
+            {% endif %}
+            {% if g.scodoc_dept %}
+                <li><a href="{{ 
+                    url_for('scolar.index_html', scodoc_dept=g.scodoc_dept) 
+                }}">Dept. {{ g.scodoc_dept }}</a></li>
+            {% endif %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if current_user.is_anonymous %}
+                <li><a href="{{ url_for('auth.login') }}">connexion</a></li>
+                {% else %}
+                <li>{% if current_user.dept %}
+                    <a href="{{ url_for('users.user_info_page', scodoc_dept=current_user.dept, user_name=current_user.user_name )
+                        }}">{{current_user.user_name}} ({{current_user.dept}})</a>
+                    {% else %}
+                    <a href="">{{current_user.user_name}}</a>
+                    {% endif %}
+                </li>
+                <li class="logout"><a href="{{ url_for('auth.logout') }}">déconnexion</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    {# application content needs to be provided in the app_content block #}
+    {% block app_content %}{% endblock %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+{{ moment.lang(g.locale) }}
+<script>
+
+</script>
+{% endblock %}

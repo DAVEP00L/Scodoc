@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+<h2>Utilisateur: {{user.user_name}} ({{'actif' if user.active else 'fermé'}})</h2>
+<p>
+<b>Login :</b> {{user.user_name}}<br/>
+<b>Nom :</b> {{user.nom or ""}}<br/>
+<b>Prénom :</b> {{user.prenom or ""}}<br/>
+<b>Mail :</b> {{user.email}}<br/>
+<b>Roles :</b> {{user.get_roles_string()}}<br/>
+<b>Dept :</b> {{user.dept or ""}}<br/>
+<b>Dernière modif mot de passe:</b> 
+{{user.date_modif_passwd.isoformat() if user.date_modif_passwd else ""}}<br/>
+<b>Date d'expiration:</b> 
+{{user.date_expiration.isoformat() if user.date_expiration else "(sans limite)"}}
+<p>
+<ul>
+    <li><a class="stdlink" href="{{
+        url_for( 'users.form_change_password', 
+        scodoc_dept=g.scodoc_dept, user_name=user.user_name)
+        }}">modifier le mot de passe ou l'adresse mail</a>
+    </li>
+    {% if current_user.has_permission(Permission.ScoUsersAdmin, dept) %}
+    <li><a class="stdlink" href="{{
+            url_for('users.create_user_form', scodoc_dept=g.scodoc_dept, 
+            user_name=user.user_name, edit=1)
+        }}">modifier ce compte</a>
+        </li>
+        <li><a class="stdlink" href="{{
+            url_for('users.toggle_active_user', scodoc_dept=g.scodoc_dept, 
+            user_name=user.user_name)
+        }}">{{"désactiver" if user.active else "activer"}} ce compte</a>
+        </li>
+    {% endif %}
+</ul>
+
+{% if current_user.id == user.id %}
+<p><b>Se déconnecter: 
+<a class="stdlink" href="{{url_for('auth.logout')}}">logout</a>
+</b></p>
+{% endif %}
+
+{# Liste des permissions #}
+<div class="permissions">
+<p>Permissions de cet utilisateur dans le département {dept}:</p>
+<ul>
+{% for p in Permission.description %}
+    <li>{{Permission.description[p]}} : 
+    {{
+        "oui" if user.has_permission(Permission.get_by_name(p), dept) else "non"
+    }}
+    </li>
+{% endfor %}
+</ul>
+</div>
+
+{% if current_user.has_permission(Permission.ScoUsersAdmin, dept) %}
+<p><a class="stdlink" href="
+{{url_for('users.index_html', scodoc_dept=g.scodoc_dept)}}
+">Liste de tous les utilisateurs</a></p>
+
+{% endif %}
+
+
+{% endblock %}
