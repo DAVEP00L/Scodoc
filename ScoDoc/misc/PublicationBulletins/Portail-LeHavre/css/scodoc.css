@@ -1,0 +1,1900 @@
+/* # -*- mode: css -*- 
+           ScoDoc, (c) Emmanuel Viennet 1998 - 2012
+ */
+
+html,body {
+  margin:0;
+  padding:0;
+  width: 100%;
+  background-color: rgb(238,238,255);
+}
+
+a:link { color:  #008080 }
+a:visited { color : #000080 }
+
+
+@media print {
+.noprint {
+  display:none;
+}
+}
+
+h1, h2, h3 {
+   font-family : arial, verdana, sans-serif ;
+}
+
+/* ----- bandeau haut ------ */
+span.bandeaugtr {
+  width: 100%;
+  margin: 0;
+  border-width: 0;
+  padding-left: 160px;
+/*  background-color: rgb(17,51,85); */
+}
+@media print {
+span.bandeaugtr {
+   display:none;
+}
+}
+tr.bandeaugtr {
+/*  background-color: rgb(17,51,85); */
+  color: rgb(255,215,0);
+ /* font-style: italic; */
+  font-weight: bold;
+  border-width: 0;
+  margin: 0;
+}
+
+#authuser {
+    margin-top: 16px;
+}
+
+#authuserlink {
+  color: rgb(255,0,0);
+  text-decoration: none;
+}
+#authuserlink:hover {
+  text-decoration: underline;
+}
+#deconnectlink {
+  font-size: 75%;
+  font-style: normal;
+  color: rgb(255,0,0);
+  text-decoration: underline;
+}
+
+/* ----- page content ------ */
+
+div.about-logo {
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+div.head_message {
+   margin-top: 2px;
+   margin-bottom: 8px;
+   padding:  5px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #ffff73;
+   -moz-border-radius: 8px;
+   -khtml-border-radius: 8px;
+   border-radius: 8px;
+   font-family : arial, verdana, sans-serif ;
+   font-weight: bold;
+   width: 40%;
+   text-align: center;
+}
+
+div.passwd_warn {
+    font-weight: bold;
+    font-size: 200%;
+    background-color: #feb199;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    padding:  20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+P.footer {
+    font-size: 80%;
+    color: rgb(60,60,60);
+    margin-top: 10px;
+    border-top: 1px solid rgb(60,60,60);
+}
+
+/* ---- (left) SIDEBAR  ----- */
+
+div.sidebar {
+  position: absolute;
+  top: 5px; left: 5px;
+  width: 130px;
+  border: black 1px;
+  /* debug background-color: rgb(245,245,245); */
+}
+@media print {
+div.sidebar {
+   display:none;
+}
+}
+a.sidebar:link { 
+  color:#358;
+  text-decoration:none;
+} 
+a.sidebar:visited { 
+   color: #358; 
+   text-decoration: none;
+}
+a.sidebar:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+a.scodoc_title {
+    color: rgb(102,102,102);
+    font-family: arial,verdana,sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+h2.insidebar {
+    color: rgb(102,102,102);
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 0;
+}
+
+h3.insidebar {
+  color: rgb(102,102,102);
+  font-weight: bold;
+  font-size: medium;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+ul.insidebar {
+  padding-left: 1em;
+  list-style: circle;
+}
+
+
+.etud-insidebar {
+   font-size: small;
+   background-color: rgb(220,220,220);
+   width: 100%;
+   -moz-border-radius: 6px;
+   -khtml-border-radius: 6px;
+   border-radius: 6px;
+}
+
+.etud-insidebar h2 {
+  color: rgb(153,51,51);
+  font-size: medium;
+}
+
+
+.etud-insidebar ul {
+   padding-left: 1.5em;
+   margin-left: 0;
+}
+
+div.logo-insidebar {
+   padding-left: 1em;
+}
+
+div.etud_info_div {
+    border: 4px solid gray;
+    height: 90px;
+    background-color: #f7f7ff;
+}
+
+div.eid_left {
+    padding: 4px; 
+    border: 0px;
+    vertical-align: top;
+    margin-right: 100px;
+}
+
+span.eid_right {
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+table.listesems th { 
+  text-align: left;  
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+table.listesems td.semicon { 
+  padding-left: 1.5em;
+}
+
+table.listesems tr.firstsem td {
+ padding-top: 0.8em;
+}
+
+h2.listesems { 
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/* ----- Liste des news ----- */
+
+div.news {
+   margin-top: 1em;
+   margin-bottom: 0px;
+   margin-right: 16px;
+   margin-left: 16px;
+   padding:  0.5em;
+   background-color: #F5F6CE;
+   -moz-border-radius: 8px;
+   -khtml-border-radius: 8px;
+   border-radius: 8px;
+}
+
+span.newstitle {
+   font-family : arial, verdana, sans-serif ;
+   font-weight: bold;
+}
+
+ul.newslist {
+  padding-left: 1em;
+  padding-bottom: 0em;
+  list-style: circle;
+}
+
+span.newsdate {
+  padding-right: 2em;
+}
+
+span.newstext {
+    font-style: italic; 
+}
+
+/* --- infos sur premiere page Sco --- */
+div.scoinfos {
+   margin-top: 0.5em;
+   margin-bottom: 0px;
+   padding: 2px;
+   padding-bottom: 0px;
+   background-color: #F4F4B2;
+}
+
+/* ----- fiches etudiants ------ */
+
+div.ficheEtud {
+   background-color: #f5edc8; /* rgb(255,240,128); */
+   border: 1px solid gray;
+   width: 910px;
+   padding: 10px;
+   margin-top: 10px;
+}
+
+div.menus_etud {
+   position: absolute;
+   margin-left: 1px;
+   margin-top: 1px;
+}
+div.ficheEtud h2 {
+   padding-top: 10px;
+}
+
+div.code_nip {
+   padding-top: 10px;
+   font-family: "Andale Mono", "Courier";
+}
+
+div.fichesituation {
+  background-color: rgb( 231, 234, 218 ); /* E7EADA */   
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.5em;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+div.ficheadmission { 
+  background-color: rgb( 231, 234, 218 ); /* E7EADA */   
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.5em;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+div.etudarchive ul {
+    padding:0; 
+    margin:0; 
+    margin-left: 1em;
+    list-style-type:none; 
+}
+
+div.etudarchive ul li {
+    background-image: url(/ScoDoc/static/icons/bullet_arrow.png);
+    background-repeat: no-repeat;
+    background-position: 0 .4em;
+    padding-left: .6em;
+}
+div.etudarchive ul li.addetudarchive {
+    background-image: url(/ScoDoc/static/icons/bullet_plus.png);
+    padding-left: 1.2em
+}
+span.etudarchive_descr {
+    margin-right: .4em;
+}
+span.deletudarchive {
+    margin-left: 0.5em;
+}
+div.fichedebouche { 
+  background-color: rgb( 0, 100, 0 ); 
+  color: gold;
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.5em;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+span.debouche_tit {
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+div.ficheinscriptions {
+   background-color: #eae3e2; /* was EADDDA */
+   margin: 0.5em 0 0.5em 0;
+   padding: 0.5em;
+   -moz-border-radius: 8px;
+   -khtml-border-radius: 8px;
+   border-radius: 8px;
+}
+
+.ficheinscriptions a.sem {
+   text-decoration: none;
+   font-weight: bold;
+   color: blue;
+}
+
+.ficheinscriptions a.sem:hover {
+   color: red;
+}
+
+
+td.photocell {
+   padding-left: 32px;
+}
+
+div.fichetitre {
+   font-weight: bold;
+}
+
+td.fichetitre2 {
+   font-weight: bold;
+   vertical-align: top;
+}
+
+td.fichetitre2 .formula {
+   font-weight: normal;
+   color: rgb(0,64,0);
+   border: 1px solid red;
+   padding-left: 1em;
+   padding-right: 1em;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   margin-right: 1em;
+}
+
+span.formula {
+  font-size: 80%;
+  font-family: Courier, monospace;
+  font-weight: normal;
+}
+
+td.fichetitre2 .fl {
+   font-weight: normal;
+}
+
+.ficheannotations {
+  background-color: #ddffdd; 
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.5em;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+td.annodel {
+}
+
+/* Page accueil Sco */
+span.infostitresem {
+   font-weight: normal;
+}
+span.linktitresem {
+   font-weight: normal;
+}
+span.linktitresem a:link {color: red;}
+span.linktitresem a:visited {color: red;}
+
+.listegroupelink a:link { color: blue; }
+.listegroupelink a:visited { color: blue; }
+.listegroupelink a:hover { color: red; }
+
+a.stdlink, a.stdlink:visited {
+  color: blue; 
+  text-decoration: underline;
+}
+a.stdlink:hover { 
+  color: red; 
+  text-decoration: underline;
+}
+
+/* markup non semantique pour les cas simples */
+
+.fontred { color: red; }
+.fontorange { color: rgb(215, 90, 0); }
+.fontitalic { font-style: italic;  }
+.redboldtext {
+   font-weight: bold;
+   color: red;
+}
+
+.greenboldtext {
+   font-weight: bold;
+   color: green;
+} 
+
+a.redlink {
+   color: red;
+}
+a.redlink:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+a.discretelink {
+   color: black;
+   text-decoration: none;
+}
+
+a.discretelink:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+.rightcell {
+    text-align: right;
+}
+
+.rightjust {
+  padding-left: 2em;
+}
+
+.centercell { 
+    text-align: center;
+}
+
+.help {
+  font-style: italic; 
+}
+
+p.indent {
+  padding-left: 2em;
+}
+
+.blacktt { 
+  font-family: Courier, monospace;
+  font-weight: normal;
+  color: black;
+}
+
+p.msg { 
+  color: red;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: rgb(140,230,250);
+  padding: 10px;
+}
+
+table.tablegrid {
+  border-color: black;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-collapse: collapse;
+}
+table.tablegrid td, table.tablegrid th {
+  border-color: black;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  margin: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* ----- Notes ------ */
+a.smallbutton {
+    border-width: 0;
+    margin: 0;
+    margin-left: 2px;
+    text-decoration: none;
+}
+span.evallink {
+    font-size: 80%;
+    font-weight: normal;
+}
+.boldredmsg {
+    color: red;
+    font-weight: bold;
+}
+
+tr.etuddem td {
+    color: rgb(100,100,100);
+    font-style: italic; 
+}
+
+td.etudabs, td.etudabs a.discretelink, tr.etudabs td.moyenne a.discretelink {
+    color: rgb(180,0,0);
+}
+tr.moyenne td {
+    font-weight: bold; 
+}
+
+table.notes_evaluation th.eval_complete a.sortheader {
+    color: green;
+}
+table.notes_evaluation th.eval_incomplete a.sortheader {
+    color: red;
+}
+table.notes_evaluation th.eval_attente a.sortheader {
+    color: rgb(215, 90, 0);;
+}
+table.notes_evaluation tr td a.discretelink:hover {
+    text-decoration: none;
+}
+table.notes_evaluation tr td.tdlink a.discretelink:hover {
+    color: red; 
+    text-decoration: underline;
+}
+table.notes_evaluation tr td.tdlink a.discretelink, table.notes_evaluation tr td.tdlink a.discretelink:visited {
+    color: blue; 
+    text-decoration: underline;
+}
+
+table.notes_evaluation tr td {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+div.notes_evaluation_stats {
+    margin-top: -15px;
+}
+
+.eval_description p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+span.eval_info {
+    font-style: italic;
+}
+span.eval_complete {
+    color: green;
+}
+span.eval_incomplete {
+    color: red;
+}
+span.eval_attente {
+    color:  rgb(215, 90, 0);
+}
+
+table.tablenote {
+  border-collapse: collapse;
+  border: 2px solid blue;
+/*  width: 100%;*/
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+table.tablenote th {  
+  padding-left: 1em;
+}
+.tablenote a {
+   text-decoration: none;
+   color: black;
+}
+.tablenote a:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+table.tablenote_anonyme {
+   border-collapse: collapse;
+   border: 2px solid blue;
+}
+
+tr.tablenote {
+    border: solid blue 1px;
+}
+td.colnote {
+  text-align : right;
+  padding-right: 0.5em;  
+  border: solid blue 1px;
+}
+td.colnotemoy {
+  text-align : right;
+  padding-right: 0.5em;
+  font-weight: bold; 
+}
+td.colcomment, span.colcomment {
+  text-align: left;
+  padding-left: 2em;
+  font-style: italic; 
+  color: rgb(80,100,80);
+}
+
+h2.formsemestre, .gtrcontent h2 {
+    margin-top: 2px;
+    font-size: 130%;
+}
+
+.formsemestre_page_title table.semtitle, .formsemestre_page_title table.semtitle td {
+    padding: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    border-width: 0;
+    border-collapse: collapse;
+}
+.formsemestre_page_title table.semtitle {
+    /* width: 100%; */
+}
+
+.formsemestre_page_title { 
+    width: 100%;
+    padding-top:5px;
+    padding-bottom: 10px;
+}
+
+.formsemestre_page_title table.semtitle td.infos table {
+    padding-top: 10px;
+}
+.formsemestre_menubar {
+    border-top: 3px solid #67A7E3;
+    background-color: #D6E9F8;
+    margin-top: 8px;
+}
+
+.formsemestre_menubar .barrenav ul li a.menu {
+    font-size: 12px;
+}
+
+.formsemestre_page_title  .infos span {
+    padding-right: 25px;
+}
+
+.formsemestre_page_title span.semtitle {
+    font-size: 110%;
+}
+.formsemestre_page_title span.resp {
+    color: red;
+    font-weight: bold;
+}
+.formsemestre_page_title span.nbinscrits {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1px;
+}
+.formsemestre_page_title span.lock {
+
+}
+
+div.formsemestre_status {
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    padding: 2px 6px 2px 16px;
+    margin-right: 10px;
+}
+
+table.formsemestre_status {
+    border-collapse: collapse;
+}
+tr.formsemestre_status { background-color: rgb(90%,90%,90%); }
+tr.formsemestre_status_green { background-color: #EFF7F2; }
+tr.formsemestre_status_ue { background-color: rgb(90%,90%,90%); }
+table.formsemestre_status td {
+    border-top: 1px solid rgb(80%,80%,80%);
+    border-bottom: 1px solid rgb(80%,80%,80%);
+    border-left: 0px;
+}
+table.formsemestre_status td.evals, table.formsemestre_status th.evals, table.formsemestre_status td.resp, table.formsemestre_status th.resp {
+    padding-left: 1em;
+}
+
+table.formsemestre_status th {
+    font-weight: bold;
+    text-align: left;
+}
+th.formsemestre_status_inscrits {
+    font-weight: bold;
+    text-align: center;
+}
+td.formsemestre_status_code {
+    width: 2em;
+}
+a.formsemestre_status_link {
+    text-decoration:none;
+    color: black;
+}
+a.formsemestre_status_link:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+td.formsemestre_status_inscrits {
+  text-align: center;
+}
+td.formsemestre_status_cell {
+  white-space: nowrap;
+}
+
+span.status_ue_acro { font-weight: bold; }
+span.status_ue_title { font-style: italic; padding-left: 1cm;}
+
+table.formsemestre_inscr td {
+    padding-right: 1.25em;
+}
+
+ul.ue_inscr_list li span.tit {
+    font-weight: bold;
+}
+ul.ue_inscr_list li.tit {
+    padding-top: 1ex;
+}
+ul.ue_inscr_list li.etud {
+    padding-top: 0.7ex;
+}
+
+/* Liste des groupes sur tableau bord semestre */
+.formsemestre_status h3 {
+  border: 0px solid black;
+  margin-bottom: 5px;
+}
+
+#grouplists h4 {
+   font-style: italic;
+   margin-bottom: 0px;
+   margin-top: 5px;
+}
+
+#grouplists table {
+   //border: 1px solid black;
+   border-spacing: 1px;
+}
+
+#grouplists td {
+}
+
+
+/* Modules */
+div.moduleimpl_tableaubord { 
+  padding: 7px;
+  border: 2px solid gray;
+}
+
+table.moduleimpl_evaluations {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+th.moduleimpl_evaluations {
+  font-weight: normal;
+  text-align: left;
+  color: red;
+}
+
+th.moduleimpl_evaluations a, th.moduleimpl_evaluations a:visited {
+  font-weight: normal;
+  color: red;
+  text-decoration: none;
+}
+th.moduleimpl_evaluations a:hover {
+   text-decoration: underline;
+}
+
+tr.moduleimpl_evaluation_row {
+}
+
+td.moduleimpl_evaluation_row {
+}
+
+tr.mievr {
+   background-color:#eeeeee;
+}
+
+tr.mievr_rattr {
+   background-color:#dddddd;
+}
+span.mievr_rattr {
+    font-weight: bold;
+    color: blue;
+    margin-left: 2em;
+    border: 1px solid red;
+    padding: 1px 3px 1px 3px;
+}
+
+tr.mievr td.mievr_tit { 
+  font-weight: bold;
+  background-color: #cccccc;
+}
+tr.mievr td {
+  text-align: left;
+  background-color:white;
+}
+tr.mievr th {
+  background-color:white;
+}
+tr.mievr td.mievr {
+  width: 90px;
+}
+tr.mievr td.mievr_menu {
+  width: 110px;
+}
+tr.mievr td.mievr_dur {
+  width: 60px;
+}
+tr.mievr td.mievr_coef {
+  width: 60px;
+}
+tr.mievr td.mievr_nbnotes {
+  width: 90px;
+}
+tr td.mievr_grtit {
+ vertical-align: top;
+ text-align: right;
+ font-weight: bold;
+}
+span.mievr_lastmodif { 
+ padding-left: 2em;
+ font-weight: normal;
+ font-style: italic; 
+}
+a.mievr_evalnodate {
+ color: rgb(215, 90, 0);
+ font-style: italic;
+ text-decoration: none;
+}
+a.mievr_evalnodate:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+span.evalindex {
+ font-weight: normal;
+ padding-left: 4em;
+}
+
+/* Formulaire edition des partitions */
+form#editpart table {
+   border: 1px solid gray;
+   border-collapse: collapse;
+}
+form#editpart tr.eptit th {
+   font-size: 110%;
+   border-bottom: 1px solid gray;
+}
+form#editpart td {
+   border-bottom: 1px dashed gray;
+}
+form#editpart table td {
+   padding-left: 1em;
+}
+form#editpart table td.epnav {
+   padding-left: 0;
+}
+
+/* Liste des formations */
+ul.notes_formation_list { 
+  list-style-type: none;
+  font-size: 110%;
+}
+li.notes_formation_list { 
+  padding-top: 10px;
+}
+
+/* Presentation formation (ue_list) */
+div.formation_descr {
+  background-color: rgb(250,250,240);
+  padding-left: 0.7em;
+  margin-right: 1em;
+}
+div.formation_descr span.fd_t {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+div.ue_list_tit {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+ul.notes_ue_list {
+  background-color: rgb(240,240,240);
+  font-weight: bold;
+  margin-top: 4px;
+  margin-right: 1em;
+}
+
+span.ue_code {
+  font-family: Courier, monospace;
+  font-weight: normal;
+  color: black;
+  font-size: 80%;
+}
+
+span.ue_type {
+  color: green;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+ul.notes_matiere_list {
+  background-color: rgb(220,220,220);
+  font-weight: normal;
+  font-style: italic; 
+}
+
+ul.notes_module_list {
+   background-color: rgb(210,210,210);
+   font-weight: normal;
+   font-style: normal; 
+}
+
+.notes_ue_list a.discretelink, .notes_ue_list a.stdlink  {
+    color: #001084;
+    text-decoration: underline;
+}
+.notes_ue_list span.locked {
+    font-weight: normal;
+}
+
+.notes_ue_list a.smallbutton img {
+    position: relative;
+    top: 2px;
+}
+
+div#ue_list_code {
+    background-color: rgb(220,220,220);
+    font-size: small;
+    padding-left: 4px;
+    padding-bottom: 1px;
+    margin-top: 10px;
+    margin: 3ex;
+}
+
+ul.notes_module_list {
+    list-style-type: none;
+}
+
+div#ue_list_etud_validations {
+    background-color: rgb(220,250,220);
+    padding-left: 4px;
+    padding-bottom: 1px;
+    margin: 3ex;
+}
+div#ue_list_etud_validations span {
+    font-weight: bold;
+}
+
+span.ue_share {
+    font-weight: bold;
+}
+
+div.ue_warning {
+    border: 1px solid red;
+    background-color: rgb(250,220,220);
+    margin: 3ex;
+    padding-left: 1ex;
+    padding-right: 1ex;
+}
+
+div.ue_warning span:before {
+    content: url(/ScoDoc/static/icons/warning_img.png);
+    vertical-align: -80%;  
+}
+
+div.ue_warning span {
+    font-weight: bold;
+}
+
+/* tableau recap notes */
+table.notes_recapcomplet {
+   border: 2px solid blue;
+   border-spacing: 0px 0px;
+   border-collapse: collapse;
+   white-space: nowrap;   
+}
+tr.recap_row_even {
+   background-color: rgb(210,210,210);
+}
+@media print {
+tr.recap_row_even { /* bordures noires pour impression */
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+}
+tr.recap_row_moy {
+   border-top: 1px solid blue;
+   font-weight: bold;
+}
+tr.recap_row_min, tr.recap_row_max {
+   font-weight: normal;
+   font-style: italic;
+}
+tr.recap_row_max {
+   border-bottom: 1px solid blue;
+}
+td.recap_tit {
+   font-weight: bold;
+   text-align: left;
+   padding-right: 1.2em;
+}
+td.recap_tit_ue {
+   font-weight: bold;
+   text-align: left;
+   padding-right: 1.2em;
+   padding-left: 2px;
+   border-left: 1px solid blue;
+}
+td.recap_col {
+   padding-right: 1.2em;
+   text-align: left;
+}
+td.recap_col_moy {
+   padding-right: 1.5em;
+   text-align: left;
+   font-weight: bold;
+   color: rgb(80,0,0);
+}
+td.recap_col_moy_inf {
+   padding-right: 1.5em;
+   text-align: left;
+   font-weight: bold;
+   color: rgb(255,0,0);
+}
+td.recap_col_ue {
+   padding-right: 1.2em;
+   padding-left: 4px;
+   text-align: left;
+   font-weight: bold;
+   border-left: 1px solid blue;
+}
+td.recap_col_ue_inf {
+   padding-right: 1.2em;
+   padding-left: 4px;
+   text-align: left;
+   font-weight: bold;
+   color: rgb(255,0,0);
+   border-left: 1px solid blue;
+}
+td.recap_col_ue_val {
+   padding-right: 1.2em;
+   padding-left: 4px;
+   text-align: left;
+   font-weight: bold;
+   color: rgb(0,140,0);
+   border-left: 1px solid blue;
+}
+/* noms des etudiants sur recap complet */
+table.notes_recapcomplet a:link, table.notes_recapcomplet a:visited {
+   text-decoration: none;
+   color: black;
+}
+
+table.notes_recapcomplet a:hover {
+   color: red;
+   text-decoration: underline;
+}
+
+/* bulletin */
+table.notes_bulletin {
+   border-collapse: collapse;
+   border: 2px solid rgb(100,100,240);
+   width: 100%;
+   margin-right: 100px;
+   background-color: rgb(240,250,255);
+   font-family : arial, verdana, sans-serif ;
+   font-size: 13px;
+}
+
+tr.notes_bulletin_row_gen {
+   border-top: 1px solid black;
+   font-weight: bold;
+}
+tr.notes_bulletin_row_rang {
+   font-weight: bold;
+}
+
+tr.notes_bulletin_row_ue {
+   /* background-color: rgb(170,187,204); voir sco_utils.UE_COLORS */
+   font-weight: bold;
+   border-top: 1px solid black;
+}
+
+tr.bul_row_ue_cur {
+   background-color: rgb(180,180,180);
+   color: rgb(50,50,50);
+}
+
+tr.bul_row_ue_cap {
+   background-color: rgb(150,170,200);
+   color: rgb(50,50,50);
+}
+
+tr.notes_bulletin_row_mat {
+  border-top: 2px solid rgb(140,140,140);
+  color: blue;
+}
+
+tr.notes_bulletin_row_mod {
+  border-top: 1px solid rgb(140,140,140);
+}
+
+tr.notes_bulletin_row_mod td.titre, tr.notes_bulletin_row_mat td.titre {
+  padding-left: 1em;
+}
+
+tr.notes_bulletin_row_eval {
+  font-style: italic; 
+  color: rgb(60,60,80);
+}
+tr.notes_bulletin_row_eval_incomplete .discretelink {
+  color: rgb(200,0,0);
+}
+
+tr.b_eval_first td {
+  border-top: 1px dashed rgb(170,170,170);
+}
+tr.b_eval_first td.titre {
+  border-top: 0px;
+}
+tr.notes_bulletin_row_eval td.module {
+  padding-left: 5px;
+  border-left: 1px dashed rgb(170,170,170);
+}
+
+table.notes_bulletin td.note {
+  padding-left: 1em;
+}
+table.notes_bulletin td.min, table.notes_bulletin td.max {
+  font-size: 80%;  
+}
+
+table.notes_bulletin tr.notes_bulletin_row_ue_cur td.note, table.notes_bulletin tr.notes_bulletin_row_ue_cur td.min, table.notes_bulletin tr.notes_bulletin_row_ue_cur td.max {
+  color: rgb(80,80,80);
+  font-style: italic; 
+}
+
+.note_bold {
+   font-weight: bold; 
+}
+td.bull_coef_eval, td.bull_nom_eval {
+   font-style: italic; 
+   color: rgb(60,60,80);
+}
+tr.notes_bulletin_row_eval td.note {
+   font-style: italic; 
+   color: rgb(40,40,40);
+   font-size: 90%;
+}
+
+tr.notes_bulletin_row_eval td.note .note_nd {
+   font-weight: bold; 
+   color: red;
+}
+
+/* --- Bulletins UCAC */
+tr.bul_ucac_row_tit, tr.bul_ucac_row_ue, tr.bul_ucac_row_total, tr.bul_ucac_row_decision, tr.bul_ucac_row_mention {
+   font-weight: bold;
+   border: 1px solid black;
+}
+tr.bul_ucac_row_tit {
+   background-color: rgb(170,187,204);
+}
+tr.bul_ucac_row_total, tr.bul_ucac_row_decision, tr.bul_ucac_row_mention {
+   background-color: rgb(220,220,220);
+}
+
+/* ---- /ucac */
+
+span.bul_minmax {
+   font-weight: normal;
+   font-size: 66%;   
+}
+span.bul_minmax:before {
+   content: " ";
+}
+
+a.bull_link {
+   text-decoration:none;
+   color: rgb(20,30,30);
+}
+a.bull_link:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+table.bull_head {
+   width: 100%;
+}
+td.bull_photo {
+   text-align: right;
+}
+
+div.bulletin_menubar {
+   padding-left: 25px;
+}
+
+.bull_liensemestre {
+   font-weight: bold; 
+}
+.bull_liensemestre a {
+   color: rgb(255,0,0);
+   text-decoration: none;
+}
+.bull_liensemestre a:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+div.bull_appreciations {
+}
+
+.bull_appreciations p {
+   margin: 0;
+   font-style: italic; 
+}
+.bull_appreciations_link {
+   margin-left: 1em;
+}
+span.bull_appreciations_date {
+   margin-right: 1em;
+   font-style: normal;
+   font-size: 75%; 
+}
+
+div.eval_description {
+    color: rgb(20,20,20);
+    /* border: 1px solid rgb(30,100,0); */
+    padding: 3px;
+}
+
+
+/* Saisie des notes */
+div.saisienote_etape1 {
+  border: 2px solid blue;
+  padding: 5px;
+  background-color: rgb( 231, 234, 218 ); /* E7EADA */ 
+}
+div.saisienote_etape2 {
+  border: 2px solid green; 
+  margin-top: 1em;
+  padding: 5px;
+  background-color: rgb(234,221,218); /* EADDDA */
+}
+span.titredivsaisienote { 
+  font-weight: bold;
+  font-size: 115%;
+}
+
+/* ----- Absences ------ */
+td.matin {
+  background-color: rgb(203,242,255);
+}
+
+td.absent {
+  background-color: rgb(255,156,156);
+}
+
+td.present {
+  background-color: rgb(230,230,230);
+}
+
+span.capstr {
+  color: red;
+}
+
+/* ----- Formulator  ------- */
+ul.tf-msg { 
+  color: rgb(6,80,18);
+  border: 1px solid red;
+}
+
+li.tf-msg {  
+  list-style-image: url(/ScoDoc/static/icons/warning16_img.png);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+p.warning {
+  font-weight: bold;
+  color: red;
+}
+/* ---- ? ne fonctionne pas :  p.warning:before { /ScoDoc/static/icons/warning16_img"); } */
+
+form.sco_pref table.tf {
+  border-spacing: 5px 15px;
+}
+
+td.tf-ro-fieldlabel { 
+  /* font-weight: bold; */
+  vertical-align:top;
+  margin-top: 20px;
+}
+td.tf-ro-fieldlabel:after {
+   content: ' :';
+}
+td.tf-ro-field {
+  vertical-align:top;
+}
+div.tf-ro-textarea {
+  border: 1px solid grey;
+  padding-left: 8px;
+}
+select.tf-selglobal {
+  margin-left: 10px;
+}
+
+td.tf-fieldlabel { 
+  /* font-weight: bold; */
+  vertical-align:top;
+}
+
+.tf-comment {
+    font-size: 80%;
+    font-style: italic;
+}
+
+.tf-explanation {
+    font-style: italic;
+}
+
+.radio_green { 
+   background-color: green;
+}
+
+.radio_red {
+   background-color: red;
+}
+
+td.fvs_val {
+ border-left: 1px solid rgb(80,80,80);
+ text-align: center;
+ padding-left: 1em;
+ padding-right: 1em;
+}
+
+td.fvs_val_inf {
+ border-left: 1px solid rgb(80,80,80);
+ text-align: center;
+ padding-left: 1em;
+ padding-right: 1em;
+ color: red;
+}
+
+td.fvs_chk {
+}
+
+td.fvs_tit {
+ font-weight: bold;
+ text-align: left;
+ border-left: 1px solid rgb(80,80,80);
+ text-align: center;
+ padding-left: 1em;
+ padding-right: 1em;
+}
+td.fvs_tit_chk {
+ font-weight: bold;
+}
+
+/* ----- Entreprises ------- */
+
+table.entreprise_list, table.corr_list, table.contact_list {
+   width : 100%;
+   border-width: 0px;
+   /* border-style: solid; */
+   border-spacing: 0px 0px;
+   padding: 0px;
+}
+tr.entreprise_list_even, tr.corr_list_even, tr.contact_list_even {
+  background-color: rgb(85%,85%,95%);
+}
+tr.entreprise_list_odd, tr.corr_list_odd, tr.contact_list_odd {
+  background-color: rgb(90%,90%, 90%);
+}
+
+td.entreprise_descr, td.corr_descr, td.contact_descr { 
+  padding-left: 2em;
+}
+td.entreprise_descr_link { 
+  padding-left: 2em;
+   white-space: nowrap;
+}
+td.entreprise_descr_name { white-space: nowrap; }
+
+a.entreprise_delete {  color: black; text-decoration: underline; }
+a.entreprise_delete:visited { color: black; }
+
+a.entreprise_edit { 
+  text-decoration: underline; 
+  color : rgb(0,0,204);
+  font-weight: normal;
+}
+a.entreprise_edit:visited { color :  rgb(0,0,204); }
+a.entreprise_edit:hover {
+   color: rgb(153,51,51);
+   text-decoration: underline;
+}
+
+p.entreprise_create { padding-top: 2em; }
+a.entreprise_create { color : black; font-weight: bold; }
+a.entreprise_create:visited { color : black; }
+
+table.entreprise_list_title { 
+  width: 100%; 
+  border-top: 1px solid rgb(51,102,204); 
+  border-spacing: 0px 0px; 
+  padding: 0px;
+}
+tr.entreprise_list_title {
+  background-color: rgb(229,236,249);
+  font-weight: bold;
+}
+td.entreprise_list_title {
+  padding-left: 1em;
+}
+td.entreprise_list_title_res {
+  font-weight: normal;
+  text-align : right;
+}
+
+h2.entreprise { 
+  color: rgb(6,102,18);
+  border: 1px solid blue;
+}
+
+h2.entreprise_contact:before { 
+  content: url(/ScoDoc/static/icons/contact_img.png);
+  vertical-align: -80%;  
+  padding-right: 1em; 
+}
+h2.entreprise_correspondant:before { 
+  content: url(/ScoDoc/static/icons/correspondant_img.png);
+  vertical-align: -80%;  
+  padding-right: 1em; 
+}
+
+h2.entreprise_new:before { 
+  content: url(/ScoDoc/static/icons/entreprise_img.png);
+  vertical-align: -80%; 
+  padding-right: 2em; 
+}
+
+p.entreprise_warning, p.gtr_warning, p.gtr_interdit, p.gtr_devel { 
+  color: red; 
+  font-style: italic; 
+  margin-top: -1em;
+}
+P.entreprise_warning:before { 
+  content: url(/ScoDoc/static/icons/warning_img.png);
+  vertical-align: -80%;  
+}
+P.gtr_interdit:before {
+  content: url(/ScoDoc/static/icons/interdit_img.png);
+  vertical-align: -80%;  
+}
+P.gtr_devel:before {
+  content: url(/ScoDoc/static/icons/devel_img.png);
+  vertical-align: -80%;  
+}
+div.entreprise-insidebar { 
+  border: 1px solid blue;
+}
+
+/* ---- Sortable tables --- */
+/* Sortable tables */
+table.sortable a.sortheader {
+    background-color:#E6E6E6;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+table.sortable span.sortarrow {
+    color: black;
+    text-decoration: none;
+}
+
+/* Horizontal bar graph */
+.graph {
+  width: 100px;
+  height: 12px;
+  /* background-color: rgb(200, 200, 250); */
+  padding-bottom: 0px;  
+  margin-bottom: 0;
+  margin-right: 0px;
+  margin-top: 3px;
+  margin-left: 10px;
+  border:1px solid black;
+  position: absolute;
+}
+
+.bar {
+     background-color: rgb(100, 150, 255);
+     margin: 0; 
+     padding: 0; 
+     position: absolute;
+     left: 0;
+     top: 2px;
+     height: 8px;
+     z-index: 2;
+}
+
+.mark {
+     background-color: rgb(0, 150, 0);
+     margin: 0; 
+     padding: 0; 
+     position: absolute;
+     top: 0;
+     width: 2px;
+     height: 100%;
+     z-index: 2;
+}
+
+td.cell_graph {
+    width: 170px;
+}
+
+/* ------------------ Formulaire validation semestre ---------- */
+table.recap_parcours {
+  color: black;
+  border-collapse: collapse;
+}
+
+table.recap_parcours td { 
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.recap_parcours tr.sem_courant {
+  background-color: rgb(245, 243, 116);
+}
+
+.recap_parcours tr.sem_precedent {
+  background-color: rgb(90%,95%,90%); 
+}
+
+.recap_parcours tr.sem_autre {
+  background-color: rgb(90%,90%,90%);
+}
+
+.rcp_l1 td {
+  padding-top: 5px;
+  border-top: 3px solid rgb(50%,50%,50%);
+  border-right: 0px;
+  border-left: 0px;
+  color: blue;
+  vertical-align: top;
+}
+td.rcp_dec {
+  color: rgb(0%,0%,50%);;
+}
+td.rcp_nonass {
+  color: red;
+}
+
+.recap_hide_details tr.rcp_l2 { display: none; } 
+table.recap_hide_details td.ue_acro span { display: none; }
+
+.sco_hide { display: none; }
+
+table.recap_hide_details tr.sem_courant,  table.recap_hide_details tr.sem_precedent { 
+    display: table-row; 
+}
+table.recap_hide_details tr.sem_courant td.ue_acro span, table.recap_hide_details tr.sem_precedent td.ue_acro span { 
+    display: inline; 
+}
+
+.recap_parcours tr.sem_courant td.rcp_type_sem {
+    font-weight: bold;
+}
+.recap_parcours tr.sem_autre td.rcp_type_sem {
+    color: rgb(100%,70%,70%);
+}
+
+.rcp_l2 td {
+  padding-bottom: 5px;
+}
+
+td.rcp_moy {  
+}
+table.recap_parcours td.datedebut {
+    color: rgb(0,0,128);
+}
+table.recap_parcours td.datefin {
+    color: rgb(0,0,128);
+}
+table.recap_parcours td.rcp_type_sem {  
+  padding-left: 4px;
+  padding-right: 4px;
+  color: red;
+}
+td.ue_adm {
+  color: green;
+  font-weight: bold;
+}
+
+td.ue_cmp {
+  color: green;
+}
+
+td.ue { 
+}
+
+h3.sfv {   
+  margin-top: 0px;
+}
+
+form.sfv_decisions { 
+  border:1px solid blue;
+  padding: 6px;
+  margin-right: 2px;
+}
+form.sfv_decisions_manuelles { 
+  margin-top: 10px;
+}
+th.sfv_subtitle { 
+  text-align: left;
+  font-style: italic;  
+}
+
+
+tr.sfv_ass { 
+  background-color: rgb(90%,90%,80%);
+}
+
+tr.sfv_pbass { 
+  background-color: rgb(90%,70%,80%);
+}
+
+div.pas_sembox {
+  margin-top: 10px;
+  border: 2px solid #a0522d;
+  padding: 5px;
+  margin-right: 10px;
+  font-family: arial,verdana,sans-serif;
+}
+
+div.pas_empty_sems {
+}
+
+.inscrit {
+/*  font-weight: bold; */
+}
+
+.inscrailleurs {
+  font-weight: bold;
+  color: red !important;
+}
+
+span.paspaye, span.paspaye a {
+  color:  #9400d3 !important;
+}
+
+.pas_sembox_title a {
+  font-weight: bold;
+  font-size: 100%;
+  color: #1C721C;
+}
+
+.pas_sembox_subtitle {
+  font-weight: normal;
+  font-size: 100%;
+  color: blue;
+  border-bottom: 1px solid  rgb(50%,50%,50%);
+  margin-bottom: 8px;
+}
+
+.pas_recap {  
+  font-weight: bold;
+  font-size: 110%;
+  margin-top: 10px;
+}
+
+div.pas_help {
+  float: left;
+}
+
+/* ---- check absences / evaluations ---- */
+div.module_check_absences h2 { 
+  font-size: 100%;
+  color: blue;
+  margin-bottom:0px;
+}
+
+div.module_check_absences h2.eval_check_absences {  
+  font-size: 80%;
+  color: black;
+  margin-left: 20px;
+  margin-top:0px;
+  margin-bottom:5px;
+}
+
+div.module_check_absences h3 {  
+  font-size: 80%;
+  color: rgb(133,0,0);
+  margin-left: 40px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+div.module_check_absences ul { 
+  margin-left: 60px;
+  font-size: 80%;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+/* ----------------------------------------------- */
+/*    Help bubbles (aka tooltips)                  */
+/* ----------------------------------------------- */
+.tooltip{
+  width: 200px;
+  color:#000;
+  font:lighter 11px/1.3 Arial,sans-serif;
+  text-decoration:none;
+  text-align:center;
+}
+
+.tooltip span.top{
+  padding: 30px 8px 0;
+  background: url(/ScoDoc/static/icons/bt_gif.png) no-repeat top;
+}
+
+.tooltip b.bottom{
+  padding:3px 8px 15px;
+  color: #548912;
+  background: url(/ScoDoc/static/icons/bt_gif.png) no-repeat bottom;
+}
+/* ----------------------------------------------- */
+
+/* ----------------------------- */
+/* TABLES generees par gen_table */
+/* ----------------------------- */
+/* style pour les tables generiques ne specifiant pas de classes */
+table.gt_table { 
+ border-collapse: collapse;
+ background-color: rgb(90%,90%,90%);
+ /* border: 1px solid black; */
+ padding: 10px;
+ margin-right: 1em;
+}
+
+table.gt_table tr {
+ background-color: rgb(90%,90%,90%);
+}
+
+table.gt_table tr.gt_hl {
+ background-color: rgb(90%,95%,90%);
+}
+table.gt_table td, table.gt_table th {
+ border: 1px solid rgb(80%,80%,80%);
+}
+table.gt_table th {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+table.gt_table td { 
+ text-align: right;
+ padding-left: 2px;
+ padding-right: 4px;
+}
+
+table.table_cohorte tr.sortbottom { 
+  background-color: rgb(85%,90%,100%);
+}
+
+table.table_leftalign tr td {  
+  text-align: left;
+}
+table.table_coldate tr td:first-child { /* largeur col. date/time */
+  width: 12em;
+  color: rgb(0%,0%,50%);
+}
+
+
+table.table_listegroupe tr td { 
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+table.list_users td.roles {
+  width: 22em;
+}
+
+table.list_users td.date_modif_passwd {
+  white-space: nowrap;
+}
+
+/* ----------------------------- */
+
+div.form_rename_partition {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+td.calday {
+  text-align: right;
+  vertical-align: top;
+}
+
+div.cal_evaluations table.monthcalendar td.calcol {
+}
+
+div.cal_evaluations table.monthcalendar td.calcell {
+  padding-left: 0.6em;
+  width: 6em;
+}
+
+
+div.cal_evaluations table.monthcalendar td a {
+  color: rgb(128,0,0);
+}
+
+#lyc_map_canvas { 
+   width:  900px;
+   height: 600px; 
+}
+
+/* Mise en garde -------------------------------*/
+.attention{
+    background-color:#CCCC99;
+    border: 2px solid #CCCC99;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    list-style:none;
+    padding:0;
+    margin:0 0 0.25em;
+    display:table;
+    margin:10px 10px 5px 10px;
+    padding:5px 5px 5px 25px;
+    border-radius: 10px;
+}
+.attention:before {
+    content:"i";
+    left:6px;
+    width:16px;
+    height:16px;
+    margin-top:-8px;
+    font-size:14px;
+    font-weight:bold;
+    font-style:italic;
+    line-height:15px;
+    text-align:center;
+    color:#fff;
+    background-color:#2385BA;
+    /* css3 */
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    border-radius:16px;
+    position:absolute;
+    top:13px;
+}
