@@ -1,7 +1,0 @@
-Package: scodoc9
-Version: x.y.z
-Architecture: amd64
-Maintainer: Emmanuel Viennet <emmanuel@viennet.net>
-Description: ScoDoc 9
- Un logiciel pour le suivi de la scolarité universitaire.
-Depends: adduser, curl, gcc, graphviz, libpq-dev, postfix|exim4, cracklib-runtime, libcrack2-dev, python3-dev, python3-venv, python3-pip, python3-wheel, nginx, postgresql, redis, ufw
