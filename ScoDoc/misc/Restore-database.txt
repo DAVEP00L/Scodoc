@@ -1,0 +1,70 @@
+
+Notes sur la restauration de la base SQL complete (ScoDoc 9)
+(dans le cas d'une réinstallation sur une autre machine, par exemple)
+
+
+1) Sur la machine origine, faire un dump complet:
+su postgres
+cd /tmp # ou ailleurs...
+pg_dumpall | gzip > scodoc.dump.txt.gz
+
+On obtient un fichier texte assez volumineux (comprimé par gzip ci-dessus)
+
+Le copier sur la machine destination, et le décompresser (gunzip).
+
+2) Sur la machine destination:
+
+ Avant toute chose, stopper scodoc:
+ 
+  systemctl stop scodoc9
+
+ 1.1) Supprimer toutes les bases ScoDoc existantes s'il y en a:
+     su scodoc
+     psql -l
+    liste les bases: celles de ScoDoc sont SCO* 
+
+   Pour chaque base SCO*, faire dropdb
+    dropdb SCODOC
+    dropdb SCODOC_DEV
+    ...
+
+ Pour les gens pressés, voici un script (à lancer comme utilisateur postgres):
+for f in $(psql -l --no-align --field-separator . | grep SCO | cut -f 1 -d.); do
+  echo dropping $f
+  dropdb $f
+done
+
+ 1.2) Charger le dump (toujours comme utilisateur scodoc):
+ psql -f scodoc.dump.txt scodoc
+
+ 1.3) Recopier les fichiers (photos, config, archives): copier le repertoire complet
+   /opt/scodoc-data
+  de la machine origine vers la nouvelle
+
+
+Puis redemarrer ScoDoc:
+  en tant que root: systemctl start scodoc9
+
+NB: si la version des sources a changée, lancer imperativement le script de mise a jour 
+     avant de redemarrer scodoc, afin qu'il change si besoin la base de donnees:
+(en tant que root):
+  apt-get update && 
+
+
+----
+Cas d'une seule base à copier (base production ou dev. par exemple)
+
+En tant qu'utilisateur "scodoc":
+Dump: permettant de la recharger en changeant son nom
+pg_dump --format=custom --file=/tmp/SCODOC.dump SCODOC 
+
+Restore: (si necessaire, utiliser dropdb avant)
+createdb SCODOC_IUTV
+pg_restore -d SCODOC_IUTV SCODOC.dump
+(si on veut garder le même nom de base que l'origine, utiliser --create )
+
+--- à revoir
+Cas d'un dump via sco_dump_db (assistance):
+createdb -E UTF-8 SCOXXX
+zcat xxx | psql SCOXXX
+
