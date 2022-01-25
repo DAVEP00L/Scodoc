@@ -1,0 +1,90 @@
+/* # -*- mode: css -*- 
+           ScoDoc, (c) Emmanuel Viennet 1998 - 2012
+ */
+
+div#radar_bulletin {
+    width: 500px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.radar {
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+
+.radar rect {
+    stroke: white;
+    fill: steelblue;
+}
+
+path {
+    fill:none;
+    stroke:gray;
+}
+
+path.radarnoteslines {
+    stroke: darkblue;
+    stroke-width: 1.5px;
+}
+
+path.radarmoylines {
+    stroke: rgb(20,90,50);;
+    stroke-width: 1.25px;
+    stroke-dasharray: 8, 4;
+}
+
+line.radarrad {
+    stroke: rgb(150, 150, 150);
+}
+
+circle.radar_disk_tick {
+    stroke-width: 1;
+    stroke : rgb(150,150,150);
+    fill : none;
+}
+circle.radar_disk_red {
+    stroke-width: 0px;
+    fill: #FFC0CB;
+    fill-opacity: 0.5;
+}
+
+path#radar_disk_tic_8 {
+    fill: #FF493C;
+    fill-opacity: 0.5;
+}
+
+path#radar_disk_tic_10 {
+    fill: #FFC0CB;
+    fill-opacity: 0.5;
+    stroke-width: 1.5px;
+    stroke: #F44646;
+}
+
+path#radar_disk_tic_20 {
+    fill: grey;
+    fill-opacity: 0.1;
+}
+
+.radar_center_mark {
+    stroke: red;
+    stroke-width : 2;
+    fill: red;
+}
+
+rect.radartip {
+    fill: #F5FB84;
+    font-size: 10pt;
+}
+
+text.textaxis {
+    fill: red;
+    font-size: 8pt;
+    text-anchor: end;
+}
+
+text.note_label {
+    fill: darkblue;
+    font-size: 10pt;
+    font-weight: bold;
+}
