@@ -90,6 +90,7 @@ class Admission(db.Model):
     # notamment dans le cadre du bac 2021
     # de plus, certaines informations liées à APB ne sont plus disponibles
     # avec Parcoursup
+    contrat = db.Column(db.Boolean())       #contrat d'etude
     annee = db.Column(db.Integer)
     bac = db.Column(db.Text)
     specialite = db.Column(db.Text)
@@ -98,21 +99,21 @@ class Admission(db.Model):
     physique = db.Column(db.Float)
     anglais = db.Column(db.Float)
     francais = db.Column(db.Float)
-    # Rang dans les voeux du candidat (inconnu avec APB et PS)
-    rang = db.Column(db.Integer)
     # Qualité et décision du jury d'admission (ou de l'examinateur)
     qualite = db.Column(db.Float)
     rapporteur = db.Column(db.Text)
     decision = db.Column(db.Text)
     score = db.Column(db.Float)
     commentaire = db.Column(db.Text)
-    # Lycée d'origine:
+    # Rang dans les voeux du candidat (inconnu avec APB et PS)
+    rang = db.Column(db.Integer)
+    # 'APB', 'APC-PC', 'CEF', 'Direct', '?' (autre)
+    type_admission = db.Column(db.Text)
+    #Etablissement d'origine:
     nomlycee = db.Column(db.Text)
     villelycee = db.Column(db.Text)
     codepostallycee = db.Column(db.Text)
     codelycee = db.Column(db.Text)
-    # 'APB', 'APC-PC', 'CEF', 'Direct', '?' (autre)
-    type_admission = db.Column(db.Text)
     # était boursier dans le cycle precedent (lycee) ?
     boursier_prec = db.Column(db.Boolean())
     # classement par le jury d'admission (1 à N),
