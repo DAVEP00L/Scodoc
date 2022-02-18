@@ -1289,28 +1289,95 @@ def _etudident_create_or_edit_form(edit):
             {
                 "size": 25,
                 "title": "Statut",
-                "explanation": '("salarie", ...) inutilisé par ScoDoc',
+                "explanation": 'salarié, étudiant...',
+            },
+        ),
+        (
+            "code_ine",
+            {
+                "size": 25,
+                "title": "Numéro INE",
+                "allow_null": not require_ine,
+            },
+        ),
+        (
+            "code_ul",
+            {
+                "size": 25,
+                "title": "Numéro étudiant UL",
+            },
+        ),
+        (
+            "code_cvec",
+            {
+                "size": 25,
+                "title": "Numéro attestation CVEC",
             },
         ),
         (
             "annee",
             {
                 "size": 5,
-                "title": "Année admission IUT",
+                "title": "Année admission",
                 "type": "int",
                 "allow_null": False,
                 "explanation": "année 1ere inscription (obligatoire)",
             },
         ),
+        (
+            "contrat",
+            {
+                "input_type": "boolcheckbox",
+                "labels": ["non", "oui"],
+                "title": "Contrat d'étude",
+            },
+        ),
+        (
+            "boursier",
+            {
+                "input_type": "boolcheckbox",
+                "labels": ["non", "oui"],
+                "title": "Contrat d'étude",
+            },
+        ),
+        (
+            "echelon",
+            {
+                "size": 5,
+                "title": "Echelon de bourse",
+            },
+        ),
         #
         ("sep", {"input_type": "separator", "title": "Scolarité antérieure:"}),
-        ("bac", {"size": 5, "explanation": "série du bac (S, STI, STT, ...)"}),
         (
-            "specialite",
+            "type_admission",
+            {
+                "input_type": "menu",
+                "title": "Voie d'admission",
+                "allowed_values": scu.TYPES_ADMISSION,
+            },
+        ),
+        (
+            "nom_etablissement",
             {
                 "size": 25,
-                "title": "Spécialité",
-                "explanation": "spécialité bac: SVT M, GENIE ELECTRONIQUE, ...",
+                "title": "Nom de l'établissement",
+            },
+        ),
+        (
+            "ville_etablissement",
+            {
+                "size": 25,
+                "title": "Ville de l'établissement",
+            },
+        ),
+        ("bac", {"size": 5, "explanation": "série du bac (S, STI, STT, ...)"}),
+        (
+            "mention",
+            {
+                "input_type": "menu",
+                "title": "Mention",
+                "allowed_values": scu.MENTIONS_BAC,
             },
         ),
         (
@@ -1319,18 +1386,31 @@ def _etudident_create_or_edit_form(edit):
                 "size": 5,
                 "title": "Année bac",
                 "type": "int",
-                "explanation": "année obtention du bac",
             },
         ),
         (
-            "math",
+            "nomlycee",
             {
-                "size": 3,
-                "type": "float",
-                "title": "Note de mathématiques",
-                "explanation": "note sur 20 en terminale",
+                "size": 25,
+                "title": "Nom du lycée",
             },
         ),
+        (
+            "villelycee",
+            {
+                "size": 25,
+                "title": "Ville du lycée",
+            },
+        ),
+        # (
+        #     "math",
+        #     {
+        #         "size": 3,
+        #         "type": "float",
+        #         "title": "Note de mathématiques",
+        #         "explanation": "note sur 20 en terminale",
+        #     },
+        # ),
         # (
         #     "physique",
         #     {
@@ -1358,113 +1438,97 @@ def _etudident_create_or_edit_form(edit):
         #         "explanation": "note sur 20 obtenue au bac",
         #     },
         # ),
-        (
-            "contrat",
-            {
-                "input_type": "boolcheckbox",
-                "labels": ["non", "oui"],
-                "title": "Contrat d'étude",
-            },
-        ),
-        (
-            "type_admission",
-            {
-                "input_type": "menu",
-                "title": "Voie d'admission",
-                "allowed_values": scu.TYPES_ADMISSION,
-            },
-        ),
-        (
-            "boursier_prec",
-            {
-                "input_type": "boolcheckbox",
-                "labels": ["non", "oui"],
-                "title": "Boursier ?",
-                "explanation": "dans le cycle précédent (lycée)",
-            },
-        ),
-        (
-            "rang",
-            {
-                "size": 1,
-                "type": "int",
-                "title": "Position établissement",
-                "explanation": "rang de notre établissement dans les voeux du candidat (si connu)",
-            },
-        ),
-        (
-            "qualite",
-            {
-                "size": 3,
-                "type": "float",
-                "title": "Qualité",
-                "explanation": "Note de qualité attribuée au dossier (par le jury d'adm.)",
-            },
-        ),
-        (
-            "decision",
-            {
-                "input_type": "menu",
-                "title": "Décision",
-                "allowed_values": [
-                    "ADMIS",
-                    "ATTENTE 1",
-                    "ATTENTE 2",
-                    "ATTENTE 3",
-                    "REFUS",
-                    "?",
-                ],
-            },
-        ),
-        (
-            "score",
-            {
-                "size": 3,
-                "type": "float",
-                "title": "Score",
-                "explanation": "score calculé lors de l'admission",
-            },
-        ),
-        (
-            "classement",
-            {
-                "size": 3,
-                "type": "int",
-                "title": "Classement",
-                "explanation": "Classement par le jury d'admission (de 1 à N)",
-            },
-        ),
-        ("apb_groupe", {"size": 15, "title": "Groupe APB ou PS"}),
-        (
-            "apb_classement_gr",
-            {
-                "size": 3,
-                "type": "int",
-                "title": "Classement",
-                "explanation": "Classement par le jury dans le groupe ABP ou PS (de 1 à Ng)",
-            },
-        ),
-        ("rapporteur", {"size": 50, "title": "Enseignant rapporteur"}),
-        (
-            "commentaire",
-            {
-                "input_type": "textarea",
-                "rows": 4,
-                "cols": 50,
-                "title": "Note du rapporteur",
-            },
-        ),
-        ("nomlycee", {"size": 20, "title": "Lycée d'origine"}),
-        ("villelycee", {"size": 15, "title": "Commune du lycée"}),
-        ("codepostallycee", {"size": 15, "title": "Code Postal lycée"}),
-        (
-            "codelycee",
-            {
-                "size": 15,
-                "title": "Code Lycée",
-                "explanation": "Code national établissement du lycée ou établissement d'origine",
-            },
-        ),
+        # (
+        #     "boursier_prec",
+        #     {
+        #         "input_type": "boolcheckbox",
+        #         "labels": ["non", "oui"],
+        #         "title": "Boursier ?",
+        #         "explanation": "dans le cycle précédent (lycée)",
+        #     },
+        # ),
+        # (
+        #     "rang",
+        #     {
+        #         "size": 1,
+        #         "type": "int",
+        #         "title": "Position établissement",
+        #         "explanation": "rang de notre établissement dans les voeux du candidat (si connu)",
+        #     },
+        # ),
+        # (
+        #     "qualite",
+        #     {
+        #         "size": 3,
+        #         "type": "float",
+        #         "title": "Qualité",
+        #         "explanation": "Note de qualité attribuée au dossier (par le jury d'adm.)",
+        #     },
+        # ),
+        # (
+        #     "decision",
+        #     {
+        #         "input_type": "menu",
+        #         "title": "Décision",
+        #         "allowed_values": [
+        #             "ADMIS",
+        #             "ATTENTE 1",
+        #             "ATTENTE 2",
+        #             "ATTENTE 3",
+        #             "REFUS",
+        #             "?",
+        #         ],
+        #     },
+        # ),
+        # (
+        #     "score",
+        #     {
+        #         "size": 3,
+        #         "type": "float",
+        #         "title": "Score",
+        #         "explanation": "score calculé lors de l'admission",
+        #     },
+        # ),
+        # (
+        #     "classement",
+        #     {
+        #         "size": 3,
+        #         "type": "int",
+        #         "title": "Classement",
+        #         "explanation": "Classement par le jury d'admission (de 1 à N)",
+        #     },
+        # ),
+        # ("apb_groupe", {"size": 15, "title": "Groupe APB ou PS"}),
+        # (
+        #     "apb_classement_gr",
+        #     {
+        #         "size": 3,
+        #         "type": "int",
+        #         "title": "Classement",
+        #         "explanation": "Classement par le jury dans le groupe ABP ou PS (de 1 à Ng)",
+        #     },
+        # ),
+        # ("rapporteur", {"size": 50, "title": "Enseignant rapporteur"}),
+        # (
+        #     "commentaire",
+        #     {
+        #         "input_type": "textarea",
+        #         "rows": 4,
+        #         "cols": 50,
+        #         "title": "Note du rapporteur",
+        #     },
+        # ),
+        # ("nomlycee", {"size": 20, "title": "Lycée d'origine"}),
+        # ("villelycee", {"size": 15, "title": "Commune du lycée"}),
+        # ("codepostallycee", {"size": 15, "title": "Code Postal lycée"}),
+        # (
+        #     "codelycee",
+        #     {
+        #         "size": 15,
+        #         "title": "Code Lycée",
+        #         "explanation": "Code national établissement du lycée ou établissement d'origine",
+        #     },
+        # ),
         ("sep", {"input_type": "separator", "title": "Codes Apogée: (optionnels)"}),
         (
             "code_nip",
@@ -1473,15 +1537,6 @@ def _etudident_create_or_edit_form(edit):
                 "title": "Numéro NIP",
                 "allow_null": True,
                 "explanation": "numéro identité étudiant (Apogée)",
-            },
-        ),
-        (
-            "code_ine",
-            {
-                "size": 25,
-                "title": "Numéro INE",
-                "allow_null": not require_ine,
-                "explanation": "numéro INE",
             },
         ),
         (
@@ -2014,13 +2069,13 @@ def form_students_import_infos_admissions(formsemestre_id=None):
     ]  # '
 
     type_admission_list = (
+        "Concours",
+        "DUT",
+        "BTS+ATS",
+        "M1",
+        "M2",
+        "Prépa des INP",
         "Autre",
-        "Parcoursup",
-        "Parcoursup PC",
-        "APB",
-        "APB PC",
-        "CEF",
-        "Direct",
     )
 
     tf = TrivialFormulator(

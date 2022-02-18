@@ -40,6 +40,9 @@ class Identite(db.Model):
     # Codes INE et NIP pas unique car le meme etud peut etre ds plusieurs dept
     code_nip = db.Column(db.Text())
     code_ine = db.Column(db.Text())
+    code_ul = db.Column(db.Text())
+    code_cvec = db.Column(db.Text())
+    echelon = db.Column(db.Text())
     # Ancien id ScoDoc7 pour les migrations de bases anciennes
     # ne pas utiliser après migrate_scodoc7_dept_archives
     scodoc7_id = db.Column(db.Text(), nullable=True)
@@ -94,35 +97,36 @@ class Admission(db.Model):
     annee = db.Column(db.Integer)
     bac = db.Column(db.Text)
     specialite = db.Column(db.Text)
+    mention = db.Column(db.Text)
     annee_bac = db.Column(db.Integer)
+    type_admission = db.Column(db.Text)
+    nomlycee = db.Column(db.Text)
+    villelycee = db.Column(db.Text)
+    nom_etablissement = db.Column(db.Text)
+    ville_etablissement = db.Column(db.Text)
+    #codepostallycee = db.Column(db.Text)
+    #rang = db.Column(db.Integer)
+    #codelycee = db.Column(db.Text)
     #math = db.Column(db.Text)
     #physique = db.Column(db.Float)
     #anglais = db.Column(db.Float)
     #francais = db.Column(db.Float)
     # Qualité et décision du jury d'admission (ou de l'examinateur)
-    qualite = db.Column(db.Float)
-    rapporteur = db.Column(db.Text)
-    decision = db.Column(db.Text)
-    score = db.Column(db.Float)
-    commentaire = db.Column(db.Text)
+    # qualite = db.Column(db.Float)
+    # rapporteur = db.Column(db.Text)
+    # decision = db.Column(db.Text)
+    # score = db.Column(db.Float)
+    # commentaire = db.Column(db.Text)
     # Rang dans les voeux du candidat (inconnu avec APB et PS)
-    rang = db.Column(db.Integer)
-    # 'APB', 'APC-PC', 'CEF', 'Direct', '?' (autre)
-    type_admission = db.Column(db.Text)
-    #Etablissement d'origine:
-    nomlycee = db.Column(db.Text)
-    villelycee = db.Column(db.Text)
-    codepostallycee = db.Column(db.Text)
-    codelycee = db.Column(db.Text)
     # était boursier dans le cycle precedent (lycee) ?
-    boursier_prec = db.Column(db.Boolean())
+    #boursier_prec = db.Column(db.Boolean())
     # classement par le jury d'admission (1 à N),
     # global (pas celui d'APB si il y a des groupes)
-    classement = db.Column(db.Integer)
+    #classement = db.Column(db.Integer)
     # code du groupe APB
-    apb_groupe = db.Column(db.Text)
+    #apb_groupe = db.Column(db.Text)
     # classement (1..Ngr) par le jury dans le groupe APB
-    apb_classement_gr = db.Column(db.Integer)
+    #apb_classement_gr = db.Column(db.Integer)
 
 
 # Suivi scolarité / débouchés

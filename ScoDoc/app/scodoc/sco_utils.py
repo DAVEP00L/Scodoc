@@ -328,7 +328,8 @@ def get_mime_suffix(format_code: str) -> tuple[str, str]:
 # Différents types de voies d'admission:
 # (stocké en texte libre dans la base, mais saisie par menus pour harmoniser)
 TYPE_ADMISSION_DEFAULT = "Inconnue"
-TYPES_ADMISSION = (TYPE_ADMISSION_DEFAULT, "APB", "APB-PC", "CEF", "Direct")
+TYPES_ADMISSION = (TYPE_ADMISSION_DEFAULT, "Concours", "Prépa des INP", "DUT", "BTS+ATS", "M1", "M2", "Autre")
+MENTIONS_BAC=(TYPE_ADMISSION_DEFAULT, "TB", "B", "AB", "Aucune")
 
 BULLETINS_VERSIONS = ("short", "selectedevals", "long")
 
