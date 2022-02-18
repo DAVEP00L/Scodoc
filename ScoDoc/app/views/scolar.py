@@ -1331,31 +1331,39 @@ def _etudident_create_or_edit_form(edit):
                 "explanation": "note sur 20 en terminale",
             },
         ),
+        # (
+        #     "physique",
+        #     {
+        #         "size": 3,
+        #         "type": "float",
+        #         "title": "Note de physique",
+        #         "explanation": "note sur 20 en terminale",
+        #     },
+        # ),
+        # (
+        #     "anglais",
+        #     {
+        #         "size": 3,
+        #         "type": "float",
+        #         "title": "Note d'anglais",
+        #         "explanation": "note sur 20 en terminale",
+        #     },
+        # ),
+        # (
+        #     "francais",
+        #     {
+        #         "size": 3,
+        #         "type": "float",
+        #         "title": "Note de français",
+        #         "explanation": "note sur 20 obtenue au bac",
+        #     },
+        # ),
         (
-            "physique",
+            "contrat",
             {
-                "size": 3,
-                "type": "float",
-                "title": "Note de physique",
-                "explanation": "note sur 20 en terminale",
-            },
-        ),
-        (
-            "anglais",
-            {
-                "size": 3,
-                "type": "float",
-                "title": "Note d'anglais",
-                "explanation": "note sur 20 en terminale",
-            },
-        ),
-        (
-            "francais",
-            {
-                "size": 3,
-                "type": "float",
-                "title": "Note de français",
-                "explanation": "note sur 20 obtenue au bac",
+                "input_type": "boolcheckbox",
+                "labels": ["non", "oui"],
+                "title": "Contrat d'étude",
             },
         ),
         (
