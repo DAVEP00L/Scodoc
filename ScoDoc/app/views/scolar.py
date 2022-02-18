@@ -1337,13 +1337,13 @@ def _etudident_create_or_edit_form(edit):
             {
                 "input_type": "boolcheckbox",
                 "labels": ["non", "oui"],
-                "title": "Contrat d'étude",
+                "title": "Boursier",
             },
         ),
         (
             "echelon",
             {
-                "size": 5,
+                "size": 2,
                 "title": "Echelon de bourse",
             },
         ),
