@@ -421,6 +421,7 @@ def etud_info(etudid=None, format="xml"):
         "etudid",
         "code_nip",
         "code_ine",
+        "code_ul",
         "nom",
         "nom_usuel",
         "prenom",
@@ -439,8 +440,6 @@ def etud_info(etudid=None, format="xml"):
         "annee_bac",
         "nomlycee",
         "villelycee",
-        "codepostallycee",
-        "codelycee",
         "date_naissance_iso",
     ):
         d[a] = etud[a]  # ne pas quoter car ElementTree.tostring quote déjà
